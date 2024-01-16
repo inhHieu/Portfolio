@@ -23,12 +23,12 @@ export default function Landing() {
                         <motion.p
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1, transition: { delay: 2.2, duration: .3 } }}
-                        >,&nbsp;I'm Hieu</motion.p>
+                        >,&nbsp;I&apos;m Hieu</motion.p>
                     </div>
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1, transition: { delay: 2.8, duration: .3 } }}>
-                        <p>I'm currently serving in</p>
+                        <p>I&apos;m currently serving in</p>
                         <p>the military for the next 2 years</p>
                     </motion.div>
                 </div>
