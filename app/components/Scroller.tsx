@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 
 interface ScrollerProps {
@@ -8,7 +7,7 @@ interface ScrollerProps {
 }
 
 export default function Scroller({ imageUrl, direction, speed }: ScrollerProps) {
-    const scroller__innerRef = useRef();
+    const scroller__innerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const scrollerInner = scroller__innerRef.current;
@@ -16,8 +15,8 @@ export default function Scroller({ imageUrl, direction, speed }: ScrollerProps) 
             const scrollerContent = Array.from(scrollerInner.children);
 
             scrollerContent.forEach((item) => {
-                const duplicatedItem = item.cloneNode(true);
-                duplicatedItem.setAttribute('aria-hidden', true);
+                const duplicatedItem = item.cloneNode(true) as HTMLElement;
+                duplicatedItem.setAttribute('aria-hidden', 'true');
                 scrollerInner.appendChild(duplicatedItem);
             });
         }
@@ -26,7 +25,7 @@ export default function Scroller({ imageUrl, direction, speed }: ScrollerProps) 
     return (
         <div className="scroller w-1/4 " data-direction={direction} data-speed={speed}>
             <div ref={scroller__innerRef} className="scroller__inner w-full flex flex-col gap-4 ">
-                {imageUrl.map((url, i) => ( // Use parentheses instead of curly braces for the map function
+                {imageUrl.map((url, i) => (
                     <img key={i} src={url} alt="" />
                 ))}
             </div>
