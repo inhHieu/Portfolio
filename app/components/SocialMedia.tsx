@@ -16,11 +16,12 @@ export default function SocialMedia() {
         <section
             className=' w-full relative max-w-[1920px] m-auto h-96 '>
             <motion.div
-                className=' flex items-center justify-center  h-full mx-28 '
+                className=' flex items-center justify-center h-full 
+                md:mx-28 '
             >
                 {/* <p className=' text-center mb-4 '>MY SOCIAL</p> */}
                 <motion.ul
-                    className=' flex gap-14'
+                    className=' flex flex-wrap gap-14 justify-center '
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1, transitionDuration: '.3s' }}
                     viewport={{ once: true }}>

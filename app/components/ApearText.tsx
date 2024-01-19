@@ -23,12 +23,12 @@ export default function ApearTex({ text }: ApearTextProps) {
 
 
     return (
-        <section ref={targetRef} className=' min-h-screen w-full grid place-items-center text-[40px] '>
+        <section ref={targetRef} className=' min-h-screen w-full grid place-items-center text-3xl '>
             <div className='w-fit m-auto text-center'>
                 {/* <p className=' -mt-9 '>So</p> */}
-                <div className='h-[170vh] '>
+                <div className='h-[170vh] w-full '>
                     <motion.p
-                        className='fixed top-1/2 left-1/2 w-max'
+                        className='fixed w-full px-8 top-1/2 left-1/2 break-normal '
                         style={{
                             opacity, scale,
                             transitionDuration: '.3s',

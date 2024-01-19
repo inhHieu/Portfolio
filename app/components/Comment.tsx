@@ -23,7 +23,7 @@ export default function Comment() {
                 <OldPuck />
             </motion.div>
             <motion.p
-                className=' ml-28 '
+                className=' mx-6 md:mx-28 '
                 initial={{ opacity:0 }}
                 whileInView={{opacity:1}}
                 transition={{ delay: 5.3 }}

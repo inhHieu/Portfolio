@@ -19,7 +19,7 @@
 }
 
 body {
-  width: calc(100vw - 10px);
+  width: 100vw;
   background-color: var(--background);
   color: var(--text);
   position: relative;
@@ -33,8 +33,6 @@ header {
   overflow: hidden;
 }
 .category img {
-  width: 100%;
-  height: 100%;
   transition: 0.3s;
   scale: 1.1;
 }
@@ -46,8 +44,6 @@ header {
   left: 50%;
   transform: translateX(-50%);
   font-family: var(--montserrat);
-  font-size: 2rem;
-  font-weight: 600;
   letter-spacing: 0rem;
   transition: 0.3s;
 }
@@ -105,9 +101,46 @@ header {
 }
 
 .walk {
-  animation: walk 2s linear 3s forwards;
+  animation: walk_sm 2s linear 3s forwards;
 }
 
+@keyframes walk_sm {
+  0% {
+    transform: scaleX(-1) rotate(0deg) translateX(50px);
+    transform-origin: 50% 100%;
+  }
+  10% {
+    transform: scaleX(-1) rotate(2deg) translateX(43px);
+  }
+  20% {
+    transform: scaleX(-1) rotate(-4deg) translateX(36px);
+  }
+  30% {
+    transform: scaleX(-1) rotate(4deg) translateX(29px);
+  }
+  40% {
+    transform: scaleX(-1) rotate(-4deg) translateX(22px);
+  }
+  50% {
+    transform: scaleX(-1) rotate(4deg) translateX(15px);
+  }
+  60% {
+    transform: scaleX(-1) rotate(-4deg) translateX(8px);
+  }
+  70% {
+    transform: scaleX(-1) rotate(4deg) translateX(1px);
+  }
+  80% {
+    transform: scaleX(-1) rotate(-2deg) translateX(-6px);
+  }
+  90% {
+    transform: scaleX(-1) rotate(2deg) translateX(-13px);
+  }
+  100% {
+    transform: scaleX(-1) rotate(0deg) translateX(-20px);
+    transform-origin: 50% 100%;
+  }
+}
 @keyframes walk {
   0% {
     transform: scaleX(-1) rotate(0deg) translateX(50px);
@@ -143,6 +176,11 @@ header {
   100% {
     transform: scaleX(-1) rotate(0deg) translateX(-100px);
     transform-origin: 50% 100%;
+  }
+}
+@media (min-width: 768px) {
+  .walk {
+    animation: walk 2s linear 3s forwards;
   }
 }
 /* width */

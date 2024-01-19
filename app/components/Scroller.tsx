@@ -23,7 +23,7 @@ export default function Scroller({ imageUrl, direction, speed }: ScrollerProps) 
     }, []);
 
     return (
-        <div className="scroller w-1/4 " data-direction={direction} data-speed={speed}>
+        <div className="scroller w-full " data-direction={direction} data-speed={speed}>
             <div ref={scroller__innerRef} className="scroller__inner w-full flex flex-col gap-4 ">
                 {imageUrl.map((url, i) => (
                     <img key={i} src={url} alt="" />
