@@ -7,12 +7,12 @@ import Indicator from './Indicator'
 export default function Landing() {
     return (
         <header className=' relative h-screen w-full'>
-            <div className=' h-full w-full flex items-center justify-center gap-40 '>
-                <div className='text-3xl end mx-8'>
+            <div className=' h-full w-full md:w-4/5 mx-auto flex items-center justify-center '>
+                <div className='text-3xl end mx-8 md:mx-0 '>
                     <div className=' relative text-5xl sm:text-6xl flex w-full '>
-                        <motion.p className=' absolute text-right inset-0 bg-black '
-                            initial={{ opacity: 0, width:"100%" }}
-                            animate={{  opacity: 1, width: "0"}}
+                        <motion.p className=' absolute text-center  inset-0 bg-black '
+                            initial={{ opacity: 0, width: "100%" }}
+                            animate={{ opacity: 1, width: "0" }}
                             transition={{
                                 opacity: { duration: .3 },
                                 // width: { duration: .5, delay: 2},
@@ -32,11 +32,16 @@ export default function Landing() {
                         <p>the military until 2026</p>
                     </motion.div>
                 </div>
-                <motion.div className=' hidden h-80 w-60
+                <motion.div className=' hidden h-80 w-0  
                 lg:block
                 '
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1, transition: { delay: 2.8, duration: .3 } }}
+                    initial={{ opacity: 0, marginLeft: "0px", }}
+                    animate={{ width: '200px', marginLeft: "100px", opacity: 1  }}
+                    transition={{
+                        width: { delay: 2.8, duration: .3 },
+                        marginLeft: { delay: 2.8, duration: .3 },
+                        opacity: { delay: 3.2, duration: .7 }
+                    }}
                     style={{
                         backgroundImage: "url(/img/Elden.jpg)",
                         backgroundPosition: "center",
