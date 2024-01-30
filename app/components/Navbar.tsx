@@ -35,10 +35,8 @@ export default function Navbar() {
             </div>
             <ul className=' w-max  gap-28 hidden md:flex '>
                 {links.slice(1).map(({ name, to, id }) => (
-                    <Link href={to}>
-                        <motion.div
-                            key={id}
-                        >
+                    <Link href={to} key={id}>
+                        <motion.div>
                             {name}
                         </motion.div>
                     </Link>

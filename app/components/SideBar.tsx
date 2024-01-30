@@ -48,7 +48,7 @@ export default function SideBar({ links, cycleOpen }: SideBarProps) {
                 width: 0,
                 transition: { delay: 0.3, duration: .3 }
             }}
-            transition={{type:"spring", bounce:0}}
+            transition={{ type: "spring", bounce: 0 }}
         >
             <motion.div
                 className=" container flex flex-col  pt-20  "
@@ -58,10 +58,9 @@ export default function SideBar({ links, cycleOpen }: SideBarProps) {
                 variants={sideVariants}
             >
                 {links.map(({ name, to, id }) => (
-                    <Link href={to} onClick={cycleOpen}>
+                    <Link href={to} onClick={cycleOpen} key={id}>
                         <motion.div
                             className="   px-6 py-4 "
-                            key={id}
                             whileHover={{ scale: 1.1 }}
                             variants={itemVariants}
                         >
