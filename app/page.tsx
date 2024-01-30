@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import { AnimatePresence } from "framer-motion";
 
 import SmoothScroll from './components/SmoothScroll';
 import Landing from './components/Landing';
@@ -46,7 +47,7 @@ export default function Home() {
 
 
   return (
-    <>
+    <AnimatePresence>
       <Landing />
       <ApearTex text='I might take longer to respond to your messages' />
       <ApearTex text='Instead, check out something I can do for you' />
@@ -55,6 +56,6 @@ export default function Home() {
       <Gallery />
       <Comment/>
       
-    </>
+    </AnimatePresence>
   )
 }

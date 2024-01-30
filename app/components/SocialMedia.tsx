@@ -33,7 +33,7 @@ export default function SocialMedia() {
                         </Link>
                     </li>
                     <li className=' w-10 h-10 scale-[1.1] ' title='zalo'>
-                        <Link href="https://nextjs.org/docs/pages/api-reference/components/link" target="_blank">
+                        <Link href="https://vercel.com/hieus-projects-e1da71c1/portfolio" target="_blank">
                             <Zalo />
                         </Link>
                     </li>

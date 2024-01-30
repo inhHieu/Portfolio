@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import Image from 'next/image'
+import Link from 'next/link';
 import { motion, useScroll, useTransform } from "framer-motion"
 
 import VerticalText from './VerticalText'
@@ -7,11 +8,13 @@ import VerticalText from './VerticalText'
 interface CardProps {
     text: string;
     imageUrl: string;
+    link: string;
 }
 
-function Card({ text, imageUrl }: CardProps) {
+function Card({ text, imageUrl, link }: CardProps) {
     return (
-        <div title={`${text} Recommendations`} 
+        <Link title={`${text} Recommendations`} 
+        href={link}
         className='category relative flex cursor-pointer select-none z-10
         h-full w-full justify-center items-center object-center  
         md:h-full md:w-1/3 md:justify-center md:items-end 
@@ -24,15 +27,15 @@ function Card({ text, imageUrl }: CardProps) {
             bg-black/40 md:bg-transparent
             md:bg-gradient-to-t md:from-black/90 md:to-black/0  '></div>
             <p className='w-max h-max absolute text-xl md:text-3xl font-semibold '>{text}</p>
-        </div>
+        </Link>
     );
 }
 
 function Category() {
     const cards = [
-        { text: "Movies", imageUrl: "/img/Lalaland.jpg" },
-        { text: "Games", imageUrl: "/img/Elden.jpg" },
-        { text: "Manga", imageUrl: "/img/aot.jpg" },
+        { text: "Movies", imageUrl: "/img/Lalaland.jpg", link:"/movie" },
+        { text: "Games", imageUrl: "/img/Elden.jpg", link:"game" },
+        { text: "Manga", imageUrl: "/img/aot.jpg", link:"manga" },
     ];
     const targetRef = useRef(null)
     const { scrollYProgress } = useScroll({
@@ -59,7 +62,7 @@ function Category() {
                 transition={{ type: "spring"}}
             >
                 {cards.map((card, index) => (
-                    <Card key={index} text={card.text} imageUrl={card.imageUrl} />
+                    <Card key={index} text={card.text} imageUrl={card.imageUrl} link={card.link} />
                 ))}
             </motion.div>
         </section>
