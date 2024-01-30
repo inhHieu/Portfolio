@@ -22,7 +22,7 @@ export default function Navbar() {
     md:px-10 
     md:bg-black md:bg-clip-padding md:backdrop-filter md:backdrop-blur-md md:bg-opacity-50 
     xl:px-14 xl:h-20  '>
-            <div className=' h-6 w-6 md:hidden z-10 ' onClick={cycleOpen}>
+            <div className=' h-6 w-6 md:hidden z-10 ' onClick={() => cycleOpen()}>
                 <FontAwesomeIcon icon={faHamburger} />
             </div>
             <AnimatePresence>
