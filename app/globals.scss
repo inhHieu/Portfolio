@@ -187,6 +187,23 @@ header {
 }
 
 
+// =================================================================
+// Card component
+.appletvIcon{
+  &::before{
+    content: '';
+    position: absolute;
+    inset: 30% 10% ;
+    display: block;
+    background-color: white;
+  }
+}
+
+
+
+
+
+
 // .category {
 //   position: relative;
 //   height: 100%;

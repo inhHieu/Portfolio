@@ -1,0 +1,32 @@
+{
+    "manga": [
+        {
+            "id": 0,
+            "name": "AOT",
+            "sum": "some words about this some words about this some words about this",
+            "genre": "horror, action",
+            "rating": "🔥",
+            "platforms": ["Netflix"],
+            "poster": "/img/aot.jpg",
+            "images": [
+                "/img/aot.jpg",
+                "/img/aot.jpg",
+                "/img/aot.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Berserk",
+            "sum": "some words about this some words about this some words about this",
+            "genre": "horror, action",
+            "rating": "💀",
+            "platforms": ["Appletv"],
+            "poster": "/img/Elden.jpg",
+            "images": [
+                "/img/Elden.jpg",
+                "/img/Elden.jpg",
+                "/img/Elden.jpg"
+            ]
+        }
+    ]
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 interface ScrollerProps {
     imageUrl: string[];
@@ -24,9 +25,15 @@ export default function Scroller({ imageUrl, direction, speed }: ScrollerProps) 
 
     return (
         <div className="scroller w-full " data-direction={direction} data-speed={speed}>
-            <div ref={scroller__innerRef} className="scroller__inner w-full flex flex-col gap-4 ">
+            <div ref={scroller__innerRef} className="scroller__inner w-full flex flex-col gap-4 relative ">
                 {imageUrl.map((url, i) => (
-                    <img key={i} src={url} alt="" />
+                    <img key={i} src={url} alt="" /> //! use Image instead img tag
+                    // <Image 
+                    // key={i} 
+                    // src={url}
+                    // fill={true}
+                    // objectFit='cover'
+                    // alt="Picture of the author" />
                 ))}
             </div>
         </div>

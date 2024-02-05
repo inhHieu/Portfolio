@@ -13,16 +13,19 @@ interface CardProps {
 
 function Card({ text, imageUrl, link }: CardProps) {
     return (
-        <Link title={`${text} Recommendations`} 
-        href={link}
-        className='category relative flex cursor-pointer select-none z-10
+        <Link title={`${text} Recommendations`}
+            href={link}
+            className='category relative flex cursor-pointer select-none z-10
         h-full w-full justify-center items-center object-center  
         md:h-full md:w-1/3 md:justify-center md:items-end 
         '>
-            <img className=' w-full md:h-full object-cover '
+            {/* <img className=' w-full md:h-full object-cover '
                 src={imageUrl}
                 alt={text}
-            />
+            /> */}
+            <div className=' relative w-full h-full  '>
+                <Image src={imageUrl} fill={true} objectFit='cover' alt={text} />
+            </div>
             <div className='mask absolute h-full w-full 
             bg-black/40 md:bg-transparent
             md:bg-gradient-to-t md:from-black/90 md:to-black/0  '></div>
@@ -33,9 +36,9 @@ function Card({ text, imageUrl, link }: CardProps) {
 
 function Category() {
     const cards = [
-        { text: "Movies", imageUrl: "/img/Lalaland.jpg", link:"/movie" },
-        { text: "Games", imageUrl: "/img/Elden.jpg", link:"game" },
-        { text: "Manga", imageUrl: "/img/aot.jpg", link:"manga" },
+        { text: "Movies", imageUrl: "/img/Lalaland.jpg", link: "/movie" },
+        { text: "Games", imageUrl: "/img/Elden.jpg", link: "game" },
+        { text: "Manga", imageUrl: "/img/aot.jpg", link: "manga" },
     ];
     const targetRef = useRef(null)
     const { scrollYProgress } = useScroll({
@@ -58,8 +61,8 @@ function Category() {
                 md:flex-row md:gap-0 md:h-screen md:w-auto md:mx-28
                 
                 "
-                style={{ opacity, scale, transitionDuration:'.3s' }}
-                transition={{ type: "spring"}}
+                style={{ opacity, scale, transitionDuration: '.3s' }}
+                transition={{ type: "spring" }}
             >
                 {cards.map((card, index) => (
                     <Card key={index} text={card.text} imageUrl={card.imageUrl} link={card.link} />
