@@ -8,10 +8,6 @@ export default function MangaInfo({ params }: { params: { mangaID: string } }) {
   const mangaID = parseInt(params.mangaID, 10);
   const manga = mangaData.manga.find((m) => m.id === mangaID);
 
-  if (!manga) {
-    return <div>Not found</div>;
-  }
-
   const [showPopup, setShowPopup] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -22,11 +18,14 @@ export default function MangaInfo({ params }: { params: { mangaID: string } }) {
     setSelectedImageIndex(index);
     setShowPopup(true);
   };
-
+  
   const handlePopupClose = () => {
     setShowPopup(false);
   };
-
+  
+  if (!manga) {
+    return <div>Not found</div>;
+  }
   return (
     <div className="warp absolute w-screen h-dvh top-0">
       <main className="relative w-full h-full">
