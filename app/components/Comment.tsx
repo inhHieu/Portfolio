@@ -7,11 +7,6 @@ export default function Comment() {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
 
-
-    useEffect(() => {
-        console.log("Element is in view: ", isInView)
-    }, [isInView])
-
     // const className = `oldPuck__wrapper w-min ${isInView ? 'walk' : ''} `
 
     return (

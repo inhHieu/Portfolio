@@ -15,9 +15,10 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "framer-motion": "^10.17.9",
     "next": "14.0.4",
-    "nextjs-progressbar": "^0.0.16",
+    "next-nprogress-bar": "^2.1.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-indiana-drag-scroll": "^2.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",

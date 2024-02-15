@@ -12,11 +12,11 @@ export default function Navbar() {
         { name: "Home", to: "/", id: 1 },
         { name: "Movie", to: "/movie", id: 2 },
         { name: "Game", to: "/game", id: 3 },
-        { name: "Manga", to: "manga", id: 4 }
+        { name: "Manga", to: "/manga", id: 4 }
     ];
 
     return (
-        <div className='  bg-black z-10
+        <div className='   z-20
     flex justify-between items-center sticky top-0 left-0 w-full 
     h-14 px-6
     md:px-10 

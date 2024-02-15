@@ -9,13 +9,101 @@
             "platforms": ["Netflix"],
             "poster": "/img/aot.jpg",
             "images": [
+                "/img/Elden.jpg",
+                "/img/aqotwf.jpeg",
+                "/img/Elden.jpg",
+                "/img/aqotwf.jpeg",
+                "/img/Elden.jpg",
+                "/img/aqotwf.jpeg",
+                "/img/aot.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Berserk",
+            "sum": "some words about this some words about this some words about this",
+            "genre": "horror, action",
+            "rating": "💀",
+            "platforms": ["Appletv"],
+            "poster": "/img/Elden.jpg",
+            "images": [
+                "/img/Elden.jpg",
+                "/img/aqotwf.jpeg",
+                "/img/aot.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "AOT",
+            "sum": "some words about this some words about this some words about this",
+            "genre": "horror, action",
+            "rating": "🔥",
+            "platforms": ["Netflix"],
+            "poster": "/img/aqotwf.jpeg",
+            "images": [
+                "/img/aqotwf.jpeg",
+                "/img/Elden.jpg",
+                "/img/aot.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Berserk",
+            "sum": "some words about this some words about this some words about this",
+            "genre": "horror, action",
+            "rating": "💀",
+            "platforms": ["Appletv"],
+            "poster": "/img/Elden.jpg",
+            "images": [
+                "/img/Elden.jpg",
+                "/img/Elden.jpg",
+                "/img/Elden.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "AOT",
+            "sum": "some words about this some words about this some words about this",
+            "genre": "horror, action",
+            "rating": "🔥",
+            "platforms": ["Netflix"],
+            "poster": "/img/aot.jpg",
+            "images": [
                 "/img/aot.jpg",
                 "/img/aot.jpg",
                 "/img/aot.jpg"
             ]
         },
         {
-            "id": 1,
+            "id": 5,
+            "name": "Berserk",
+            "sum": "some words about this some words about this some words about this",
+            "genre": "horror, action",
+            "rating": "💀",
+            "platforms": ["Appletv"],
+            "poster": "/img/Elden.jpg",
+            "images": [
+                "/img/Elden.jpg",
+                "/img/Elden.jpg",
+                "/img/Elden.jpg"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "AOT",
+            "sum": "some words about this some words about this some words about this",
+            "genre": "horror, action",
+            "rating": "🔥",
+            "platforms": ["Netflix"],
+            "poster": "/img/aot.jpg",
+            "images": [
+                "/img/aot.jpg",
+                "/img/aot.jpg",
+                "/img/aot.jpg"
+            ]
+        },
+        {
+            "id": 7,
             "name": "Berserk",
             "sum": "some words about this some words about this some words about this",
             "genre": "horror, action",
