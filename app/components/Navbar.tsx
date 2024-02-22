@@ -1,6 +1,8 @@
 "use client"
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import Link from 'next/link';
+import { useRef } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faHome, faHamburger } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,7 +16,7 @@ export default function Navbar() {
         { name: "Game", to: "/game", id: 3 },
         { name: "Manga", to: "/manga", id: 4 }
     ];
-
+    const hamburgerRef = useRef<HTMLDivElement>(null);
     return (
         <div className='   z-20
     flex justify-between items-center sticky top-0 left-0 w-full 
@@ -22,12 +24,12 @@ export default function Navbar() {
     md:px-10 
     md:bg-black md:bg-clip-padding md:backdrop-filter md:backdrop-blur-md md:bg-opacity-50 
     xl:px-14 xl:h-20  '>
-            <div className=' h-6 w-6 md:hidden z-10 ' onClick={() => cycleOpen()}>
+            <div ref={hamburgerRef} className=' h-6 w-6 md:hidden z-10 ' onClick={() => cycleOpen()}>
                 <FontAwesomeIcon icon={faHamburger} />
             </div>
             <AnimatePresence>
                 {open && (
-                    <SideBar links={links} cycleOpen={cycleOpen} />
+                    <SideBar hamRef={hamburgerRef} links={links} cycleOpen={cycleOpen} />
                 )}
             </AnimatePresence>
             <div className=' h-6 w-6 hidden md:block '>

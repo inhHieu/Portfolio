@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const platformComponents = {
   Netflix: {
     component: (
-      <div className='relative w-5 h-5'>
+      <div className='relative w-5 h-5 '>
         <Image src={'/img/provider/netflix.png'} alt='' fill={true} objectFit='cover' className='scale-125' />
       </div>
     ),

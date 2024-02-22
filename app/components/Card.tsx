@@ -1,4 +1,7 @@
+"use client"
 import React from 'react'
+import { motion as m, useScroll, useTransform } from "framer-motion"
+
 import Image from 'next/image'
 import Link from 'next/link';
 import { platformComponents as platforms } from '../components/Platform'
@@ -30,13 +33,13 @@ function Card({ manga }: CardProps) {
   return (
     <Link href={`/manga/${manga.id}`}>
       <div className=' max-w-[350px] max-h-[180px] w-full aspect-video rounded-[10px]  bg-white/10 flex overflow-clip ' >
-        <div className='  h-full w-[35%] relative flex-shrink-0 '>
+        <m.div className='  h-full w-[35%] relative flex-shrink-0 '>
           <Image
             src={manga.poster}
             fill={true}
             objectFit='cover'
             alt={manga.name} />
-        </div>
+        </m.div>
         <div className=' m-5 text-sm flex flex-col justify-between  '>
           <div className=' flex flex-col gap-1 '>
             <p className=' text-base font-medium '>{manga.name}</p>

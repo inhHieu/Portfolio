@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { motion } from "framer-motion";
 
@@ -10,10 +10,11 @@ interface Link {
 }
 
 interface SideBarProps {
+    hamRef: React.MutableRefObject<null>;
     links: Link[];
     cycleOpen: () => void;
 }
-export default function SideBar({ links, cycleOpen }: SideBarProps) {
+export default function SideBar({ hamRef, links, cycleOpen, }: SideBarProps) {
 
     const itemVariants = {
         closed: {
@@ -37,18 +38,36 @@ export default function SideBar({ links, cycleOpen }: SideBarProps) {
             }
         }
     };
+    const sidebarRef = useRef(null);
 
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+          if (
+            sidebarRef.current &&
+            !sidebarRef.current.contains(event.target as Node) &&
+            !hamRef.current?.contains(event.target as Node)
+          ) {
+            cycleOpen();
+          }
+        }
+      
+        document.addEventListener('click', handleClickOutside);
+      
+        return () => {
+          document.removeEventListener('click', handleClickOutside);
+        };
+      }, [cycleOpen]);
     return (
-        <motion.aside className=' bg-black bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-80 
-                    absolute h-dvh w-[200px] top-0 left-0 
-                    md:hidden'
-            initial={{ width: 0, }}
+        <motion.aside
+            ref={sidebarRef}
+            className="bg-black bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-80 absolute h-dvh w-[200px] top-0 left-0 md:hidden"
+            initial={{ width: 0 }}
             animate={{ width: 200 }}
             exit={{
                 width: 0,
-                transition: { delay: 0.3, duration: .3 }
+                transition: { delay: 0.3, duration: 0.3 },
             }}
-            transition={{ type: "spring", bounce: 0 }}
+            transition={{ type: 'spring', bounce: 0 }}
         >
             <motion.div
                 className=" container flex flex-col  pt-20  "
