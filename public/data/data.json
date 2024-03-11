@@ -5,9 +5,10 @@
             "name": "AOT",
             "sum": "some words about this some words about this some words about this some words about this some words about this some words about this",
             "genre": "horror, action",
-            "rating": "🔥",
+            "rating": "🔥/10",
             "platforms": ["Netflix"],
             "poster": "/img/aot.jpg",
+            "lposter": "/img/aot/lposter.jpg",
             "images": [
                 "/img/Elden.jpg",
                 "/img/aqotwf.jpeg",
@@ -26,6 +27,7 @@
             "rating": "💀",
             "platforms": ["Appletv"],
             "poster": "/img/Elden.jpg",
+            "lposter": "/img/aqotwf.jpeg",
             "images": [
                 "/img/Elden.jpg",
                 "/img/aqotwf.jpeg",
@@ -40,6 +42,7 @@
             "rating": "🔥",
             "platforms": ["Netflix"],
             "poster": "/img/aqotwf.jpeg",
+            "lposter": "/img/aqotwf.jpeg",
             "images": [
                 "/img/aqotwf.jpeg",
                 "/img/Elden.jpg",
@@ -54,6 +57,7 @@
             "rating": "💀",
             "platforms": ["Appletv"],
             "poster": "/img/Elden.jpg",
+            "lposter": "/img/aqotwf.jpeg",
             "images": [
                 "/img/Elden.jpg",
                 "/img/Elden.jpg",
@@ -68,6 +72,7 @@
             "rating": "🔥",
             "platforms": ["Netflix"],
             "poster": "/img/aot.jpg",
+            "lposter": "/img/aqotwf.jpeg",
             "images": [
                 "/img/aot.jpg",
                 "/img/aot.jpg",
@@ -82,6 +87,7 @@
             "rating": "💀",
             "platforms": ["Appletv"],
             "poster": "/img/Elden.jpg",
+            "lposter": "/img/aqotwf.jpeg",
             "images": [
                 "/img/Elden.jpg",
                 "/img/Elden.jpg",
@@ -96,6 +102,7 @@
             "rating": "🔥",
             "platforms": ["Netflix"],
             "poster": "/img/aot.jpg",
+            "lposter": "/img/aqotwf.jpeg",
             "images": [
                 "/img/aot.jpg",
                 "/img/aot.jpg",
@@ -110,6 +117,7 @@
             "rating": "💀",
             "platforms": ["Appletv"],
             "poster": "/img/Elden.jpg",
+            "lposter": "/img/aqotwf.jpeg",
             "images": [
                 "/img/Elden.jpg",
                 "/img/Elden.jpg",

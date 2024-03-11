@@ -58,8 +58,8 @@ function Category() {
 
             <motion.div
                 className="categories flex flex-col w-full h-4/5 max-h-[1080px] gap-2 px-2
-                md:flex-row md:gap-0 md:h-screen md:w-auto md:mx-28
-                
+                md:flex-row md:gap-0 md:w-auto md:mx-28
+                lg:h-screen
                 "
                 style={{ opacity, scale, transitionDuration: '.3s' }}
                 transition={{ type: "spring" }}
