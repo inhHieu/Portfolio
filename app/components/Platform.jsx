@@ -8,7 +8,7 @@ export const platformComponents = {
         <Image src={'/img/provider/netflix.png'} alt='' fill={true} objectFit='cover' className='scale-125' />
       </div>
     ),
-    link: '/netflix/manga',
+    link: 'https://www.netflix.com',
   },
   Appletv: {
     component: (
@@ -16,6 +16,16 @@ export const platformComponents = {
         <Image src={'/img/provider/appletv.png'} alt='' fill={true} objectFit='contain' />
       </div>
     ),
+    link: 'https://tv.apple.com',
+    // Add other properties and values for Appletv component, if needed
+  },
+  Mangapill: {
+    component: (
+      <div className='mangapill relative w-5 h-5 rounded-[4px] '>
+        <Image src={'/img/provider/mangapill.png'} alt='' fill={true} objectFit='contain' />
+      </div>
+    ),
+    link: 'https://www.mangapill.com',
     // Add other properties and values for Appletv component, if needed
   },
   // Add other platform components here

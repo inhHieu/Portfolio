@@ -38,7 +38,7 @@ export default function MangaInfo({ params }: { params: { mangaID: string } }) {
     return <div>Not found</div>;
   }
   return (
-    <div className="warp absolute w-screen h-dvh top-0">
+    <div className="warp absolute w-screen h-dvh top-0 overflow-hidden">
       <main className="relative w-full h-full">
         <div className="absolute w-full h-full -z-10">
           {isPortrait &&
@@ -50,7 +50,8 @@ export default function MangaInfo({ params }: { params: { mangaID: string } }) {
           initial={{ y: 700 }}
           animate={{ y: 0 }}
           transition={{ ease: "circInOut", duration: .7, delay: .2 }}
-          className="absolute w-full max-h-[400px] h-4/6 md:h-2/5 left-0 bottom-0 rounded-t-2xl bg-black bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-60">
+          style={{ scrollbarWidth: 'thin' }}
+          className="absolute w-full max-h-[400px] h-4/6 md:h-2/5 left-0 bottom-0 rounded-t-2xl bg-black bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-60 overflow-auto">
           <div className="h-full max-w-[1440px] mx-auto font-medium text-xl text-white/80 py-7 flex flex-col justify-between">
             <div className={`${margin}`}>
               <div className="text-3xl text-white mb-1">{manga.name}</div>
@@ -72,14 +73,14 @@ export default function MangaInfo({ params }: { params: { mangaID: string } }) {
                     const validLink = link || '#'; // Provide a default link value if it is undefined
 
                     return (
-                      <Link href={validLink} key={index} className='flex md:items-center md:justify-center'>
+                      <Link href={validLink} target='_blank' key={index} className='flex md:items-center md:justify-center'>
                         {component}
                       </Link>
                     );
                   })}
                 </div >
               </div>
-              <div className="h-2/3 pt-4 px-4 overflow-y-auto no-scrollbar  ">
+              <div className="h-2/3 p-4 px-4 overflow-y-auto no-scrollbar  ">
                 <div className="flex flex-row gap-4 h-full">
                   {manga.images.map((image, index) => (
                     <img
