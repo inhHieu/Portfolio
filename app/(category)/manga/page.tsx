@@ -7,11 +7,11 @@ import mangaData from '../../../public/data/data.json';
 export default function Manga() {
 
   const itemVariants = {
-    initial :{
-      opacity:0
+    initial: {
+      opacity: 0
     },
-    animate :{
-      opacity:1
+    animate: {
+      opacity: 1
     }
   }
 
@@ -37,8 +37,8 @@ export default function Manga() {
         variants={parentVariants}
         className=' w-full flex gap-6 px-6 pb-6 flex-wrap justify-center max-w-[1920px] m-auto '>
         {mangaData.manga.map((manga, i) => (
-          <m.div variants={itemVariants} >
-          <Card manga={manga} key={i} />
+          <m.div variants={itemVariants}  key={i}  >
+            <Card manga={manga}/>
           </m.div>
         ))}
       </m.div>

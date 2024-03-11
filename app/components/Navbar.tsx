@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useRef } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faHome, faHamburger } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faHome, faHamburger, faHouse } from "@fortawesome/free-solid-svg-icons";
 
 import SideBar from "./SideBar";
 
@@ -37,10 +37,18 @@ export default function Navbar() {
                     <SideBar hamRef={hamburgerRef} links={links} cycleOpen={cycleOpen} />
                 )}
             </AnimatePresence>
-            <div className=' h-6 w-6 hidden md:block '>
-                <Link href={previousPathname}>
-                    <FontAwesomeIcon icon={faArrowLeft} />
-                </Link>
+            <div className="flex items-center place-items-center">
+                <div className=' h-6 hidden md:block '>
+                    <Link href={previousPathname}>
+                        <FontAwesomeIcon icon={faArrowLeft} />
+                    </Link>
+                </div>
+                <span className=" w-[1px] h-4 rounded-full bg-gray-500/30 mx-1"></span>
+                <div className=' h-6 hidden md:block '>
+                    <Link href={"/"}>
+                        <FontAwesomeIcon icon={faHouse} />
+                    </Link>
+                </div>
             </div>
             <ul className=' w-max  gap-28 hidden md:flex '>
                 {links.slice(1).map(({ name, to, id }) => (
