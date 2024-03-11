@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { RefObject, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { motion } from "framer-motion";
 
@@ -10,7 +10,7 @@ interface Link {
 }
 
 interface SideBarProps {
-    hamRef: React.MutableRefObject<null>;
+    hamRef: RefObject<HTMLDivElement> ;
     links: Link[];
     cycleOpen: () => void;
 }
