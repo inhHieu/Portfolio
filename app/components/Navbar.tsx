@@ -38,17 +38,17 @@ export default function Navbar() {
                 )}
             </AnimatePresence>
             <div className="flex items-center place-items-center">
-                <div className=' h-6 hidden md:block '>
-                    <Link href={previousPathname}>
+                <Link href={previousPathname}>
+                    <div className=' p-2 hidden md:block '>
                         <FontAwesomeIcon icon={faArrowLeft} />
-                    </Link>
-                </div>
-                <span className=" w-[1px] h-4 rounded-full bg-gray-500/30 mx-1"></span>
-                <div className=' h-6 hidden md:block '>
-                    <Link href={"/"}>
+                    </div>
+                </Link>
+                <span className=" w-[1px] h-4 rounded-full bg-gray-500/30 mx-2"></span>
+                <Link href={"/"}>
+                    <div className=' p-2 hidden md:block '>
                         <FontAwesomeIcon icon={faHouse} />
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </div>
             <ul className=' w-max  gap-28 hidden md:flex '>
                 {links.slice(1).map(({ name, to, id }) => (

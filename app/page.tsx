@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 
 import SmoothScroll from './components/SmoothScroll';
 import Landing from './components/Landing';
+import Bgvideo from './components/Bgvideo';
 import ApearTex from './components/ApearText';
 import Category from './components/Category';
 import SocialMedia from './components/SocialMedia';
@@ -49,6 +50,7 @@ export default function Home() {
   return (
     <AnimatePresence>
       <Landing />
+      {/* <Bgvideo/> */}
       <ApearTex text='I might take longer to respond to your messages' />
       <ApearTex text='Instead, check out something I can do for you' />
       <Category />
