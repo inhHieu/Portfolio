@@ -19,7 +19,8 @@
                 "/img/aot/5.jpg",
                 "/img/aot/6.jpg",
                 "/img/aot/7.jpg"
-            ]
+            ],
+            "guess": false
         },
         {
             "id": 1,
@@ -34,7 +35,8 @@
                 "/img/berserk/poster.jpg",
                 "/img/berserk/lposter.jpg",
                 "/img/berserk/poster.jpg"
-            ]
+            ],
+            "guess": false
         },
         {
             "id": 2,
@@ -49,7 +51,8 @@
                 "/img/vinlandsaga/poster.jpg",
                 "/img/vinlandsaga/lposter.jpg",
                 "/img/aot.jpg"
-            ]
+            ],
+            "guess": false
         },
         {
             "id": 3,
@@ -64,7 +67,8 @@
                 "/img/vagabond/poster.jpg",
                 "/img/vagabond/lposter.jpg",
                 "/img/Elden.jpg"
-            ]
+            ],
+            "guess": false
         },
         {
             "id": 4,
@@ -79,7 +83,8 @@
                 "/img/monster/poster.jpg",
                 "/img/monster/lposter.jpg",
                 "/img/aot.jpg"
-            ]
+            ],
+            "guess": false
         },
         {
             "id": 5,
@@ -94,7 +99,8 @@
                 "/img/kagurabachi/poster.jpg",
                 "/img/kagurabachi/lposter.jpg",
                 "/img/Elden.jpg"
-            ]
+            ],
+            "guess": false
         },
         {
             "id": 6,
@@ -109,7 +115,8 @@
                 "/img/jjk/poster.jpg",
                 "/img/jjk/lposter.jpg",
                 "/img/aot.jpg"
-            ]
+            ],
+            "guess": false
         },
         {
             "id": 7,
@@ -124,7 +131,8 @@
                 "/img/CER/poster.jpg",
                 "/img/CER/lposter.jpg",
                 "/img/Elden.jpg"
-            ]
+            ],
+            "guess": false
         }
     ]
 }

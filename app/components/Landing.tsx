@@ -63,7 +63,7 @@ export default function Landing() {
                 animate={{ opacity: !isInView ? 1 : 0 }}
                 transition={{ duration: 2 }}
             >
-                {!isInView && <BgVideo />}
+                <BgVideo />
             </motion.div>
         </>
     )

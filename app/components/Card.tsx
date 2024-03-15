@@ -33,13 +33,13 @@ function Card({ manga }: CardProps) {
   return (
     <Link href={`/manga/${manga.id}`}>
       <div className=' max-w-[350px] max-h-[180px] w-full aspect-video rounded-[10px]  bg-white/10 flex overflow-clip ' >
-        <m.div className='  h-full w-[35%] relative flex-shrink-0 '>
+        <div className='  h-full w-[35%] relative flex-shrink-0 '>
           <Image
             src={manga.poster}
             fill={true}
             objectFit='cover'
             alt={manga.name} />
-        </m.div>
+        </div>
         <div className=' m-5 text-sm flex flex-col justify-between  '>
           <div className=' flex flex-col gap-1 '>
             <p className=' text-base font-medium '>{manga.name}</p>
@@ -71,5 +71,30 @@ function Card({ manga }: CardProps) {
 }
 
 
-export default Card;
-// w-[680px]
+function AddCard() {
+  return (
+    <m.div 
+    className=' max-w-[350px] max-h-[180px] w-full aspect-video rounded-[10px]  bg-white/10 flex overflow-clip ' >
+    <div className='h-full w-[35%] relative flex-shrink-0 bg-gray-300'>
+
+      </div>
+      <div className='m-5 text-sm flex flex-col justify-between'>
+        <div className='flex flex-col gap-1'>
+          <div className='h-4 bg-gray-300 rounded'></div>
+          <div className='h-4 bg-gray-300 rounded'></div>
+        </div>
+        <div className='flex flex-col'>
+          <div className='h-4 bg-gray-300 rounded'></div>
+          <div className='h-4 bg-gray-300 rounded'></div>
+          <div className='platform flex gap-4 mt-1'>
+            <div className='h-4 w-4 bg-gray-300 rounded'></div>
+            <div className='h-4 w-4 bg-gray-300 rounded'></div>
+            <div className='h-4 w-4 bg-gray-300 rounded'></div>
+          </div>
+        </div>
+      </div>
+    </m.div>
+  );
+}
+
+export { Card, AddCard };
