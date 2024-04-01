@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { motion as m } from "framer-motion"
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import {Button } from "@mui/material";
+import { Button } from "@mui/material";
 
 
 import { AddCard, Card } from '@/app/components/Card'
@@ -57,24 +57,36 @@ export default function Manga() {
           </m.div>
         ))}
       </m.div>
-      <Button
-        disableRipple
-        sx={{
+      <m.div
+        initial={{
           position: 'fixed',
-          bottom: 36,
-          right: 36,
+          bottom:36,
+          right:36,
           height: 64,
-          width: 64,
-          transition: ' transform .5s ease',
-          color: 'white',
-          ":hover": {
-            transform: 'rotate(180deg)'
-          }
+          width: 64
         }}
-        onClick={handleClickOpen}
-      >
-        <AddCircleIcon sx={{ fontSize: 48, transition: 'transform 0.3s ease' }} />
-      </Button>
+        whileHover={{rotate: 180}}
+        whileTap={{ scale: 0.8 }}>
+        <Button
+          disableRipple
+          sx={{
+          //   position: 'fixed',
+          //   bottom: 36,
+          //   right: 36,
+            height: 64,
+            width: 64,
+          //   transition: ' transform .5s ease',
+          //   color: 'white',
+          //   ":hover": {
+          //     transform: 'rotate(180deg)'
+          //   }
+          }}
+          onClick={handleClickOpen}
+        >
+          <AddCircleIcon sx={{ fontSize: 48, transition: 'transform 0.3s ease' }} />
+        </Button>
+      </m.div>
+
       {open && <Popup open={open} handleClose={handleClose} />}
     </main>
   )

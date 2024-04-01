@@ -1,138 +1,220 @@
 {
-    "manga": [
-        {
-            "id": 0,
-            "name": "Attack on Titan",
-            "sum": "Attack on Titan is a brutally intense and emotionally gripping manga and anime series. It explores themes of survival, betrayal, and the despair of humanity in a dark and thought-provoking way. The series' relentless action and melancholic atmosphere make it a captivating and emotionally challenging experience.",
-            "genre": "Horror, Action, Dark Fantasy",
-            "rating": "🔥/10",
-            "platforms": ["Netflix","Mangapill"],
-            "poster": "/img/aot/poster.jpg",
-            "lposter": "/img/aot/lposter.jpg",
-            "images": [
-                "/img/aot/poster.jpg",
-                "/img/aot/lposter.jpg",
-                "/img/aot/1.jpg",
-                "/img/aot/2.jpg",
-                "/img/aot/3.jpg",
-                "/img/aot/4.jpg",
-                "/img/aot/5.jpg",
-                "/img/aot/6.jpg",
-                "/img/aot/7.jpg"
-            ],
-            "guess": false
-        },
-        {
-            "id": 1,
-            "name": "Berserk",
-            "sum": "Berserk is a brutally intense and haunting manga and anime series. It explores the darkest depths of human nature, delving into violence, betrayal, and the struggle for identity. With its visceral and graphic depictions, Berserk leaves a lasting impact, pushing the boundaries of storytelling in the dark fantasy genre.",
-            "genre": "Horror, Action, Dark Fantasy",
-            "rating": "💀/10",
-            "platforms": ["Netflix","Mangapill"],
-            "poster": "/img/berserk/poster.jpg",
-            "lposter": "/img/berserk/llposter.jpg",
-            "images": [
-                "/img/berserk/poster.jpg",
-                "/img/berserk/lposter.jpg",
-                "/img/berserk/poster.jpg"
-            ],
-            "guess": false
-        },
-        {
-            "id": 2,
-            "name": "Vinland Saga",
-            "sum": "some words about this some words about this some words about this",
-            "genre": "horror, action",
-            "rating": "🔥/10",
-            "platforms": ["Netflix","Mangapill"],
-            "poster": "/img/vinlandsaga/poster.jpg",
-            "lposter": "/img/vinlandsaga/lposter.jpg",
-            "images": [
-                "/img/vinlandsaga/poster.jpg",
-                "/img/vinlandsaga/lposter.jpg",
-                "/img/aot.jpg"
-            ],
-            "guess": false
-        },
-        {
-            "id": 3,
-            "name": "Vagabond",
-            "sum": "some words about this some words about this some words about this",
-            "genre": "horror, action",
-            "rating": "💀",
-            "platforms": ["Mangapill"],
-            "poster": "/img/vagabond/poster.jpg",
-            "lposter": "/img/vagabond/lposter.jpg",
-            "images": [
-                "/img/vagabond/poster.jpg",
-                "/img/vagabond/lposter.jpg",
-                "/img/Elden.jpg"
-            ],
-            "guess": false
-        },
-        {
-            "id": 4,
-            "name": "Monster",
-            "sum": "some words about this some words about this some words about this",
-            "genre": "horror, action",
-            "rating": "🔥",
-            "platforms": ["Netflix","Mangapill"],
-            "poster": "/img/monster/poster.jpg",
-            "lposter": "/img/monster/lposter.jpg",
-            "images": [
-                "/img/monster/poster.jpg",
-                "/img/monster/lposter.jpg",
-                "/img/aot.jpg"
-            ],
-            "guess": false
-        },
-        {
-            "id": 5,
-            "name": "Kagurabachi",
-            "sum": "some words about this some words about this some words about this",
-            "genre": "horror, action",
-            "rating": "💀",
-            "platforms": ["Mangapill"],
-            "poster": "/img/kagurabachi/poster.jpg",
-            "lposter": "/img/kagurabachi/lposter.jpg",
-            "images": [
-                "/img/kagurabachi/poster.jpg",
-                "/img/kagurabachi/lposter.jpg",
-                "/img/Elden.jpg"
-            ],
-            "guess": false
-        },
-        {
-            "id": 6,
-            "name": "Jujutsu Kaisen",
-            "sum": "some words about this some words about this some words about this",
-            "genre": "horror, action",
-            "rating": "🔥",
-            "platforms": ["Netflix","Mangapill"],
-            "poster": "/img/jjk/poster.jpg",
-            "lposter": "/img/jjk/lposter.jpg",
-            "images": [
-                "/img/jjk/poster.jpg",
-                "/img/jjk/lposter.jpg",
-                "/img/aot.jpg"
-            ],
-            "guess": false
-        },
-        {
-            "id": 7,
-            "name": "Cyberpunk: Edgerunner",
-            "sum": "some words about this some words about this some words about this",
-            "genre": "Sci-fi, action",
-            "rating": "💀",
-            "platforms": ["Netflix"],
-            "poster": "/img/CER/poster.jpg",
-            "lposter": "/img/CER/lposter.jpg",
-            "images": [
-                "/img/CER/poster.jpg",
-                "/img/CER/lposter.jpg",
-                "/img/Elden.jpg"
-            ],
-            "guess": false
-        }
-    ]
+  "manga": [
+    {
+      "id": 0,
+      "name": "Attack on Titan",
+      "sum": "Attack on Titan is a brutally intense and emotionally gripping manga and anime series. It explores themes of survival, betrayal, and the despair of humanity in a dark and thought-provoking way. The series' relentless action and melancholic atmosphere make it a captivating and emotionally challenging experience.",
+      "genre": "Horror, Action, Dark Fantasy",
+      "rating": "🔥/10",
+      "platforms": [
+        "Netflix",
+        "Mangapill"
+      ],
+      "poster": "/img/aot/poster.jpg",
+      "lposter": "/img/aot/lposter.jpg",
+      "images": [
+        "/img/aot/poster.jpg",
+        "/img/aot/lposter.jpg",
+        "/img/aot/1.jpg",
+        "/img/aot/2.jpg",
+        "/img/aot/3.jpg",
+        "/img/aot/4.jpg",
+        "/img/aot/5.jpg",
+        "/img/aot/6.jpg",
+        "/img/aot/7.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 1,
+      "name": "Berserk",
+      "sum": "Berserk is a brutally intense and haunting manga and anime series. It explores the darkest depths of human nature, delving into violence, betrayal, and the struggle for identity. With its visceral and graphic depictions, Berserk leaves a lasting impact, pushing the boundaries of storytelling in the dark fantasy genre.",
+      "genre": "Horror, Action, Dark Fantasy",
+      "rating": "💀/10",
+      "platforms": [
+        "Netflix",
+        "Mangapill"
+      ],
+      "poster": "/img/berserk/poster.jpg",
+      "lposter": "/img/berserk/llposter.jpg",
+      "images": [
+        "/img/berserk/poster.jpg",
+        "/img/berserk/lposter.jpg",
+        "/img/berserk/poster.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 2,
+      "name": "Vinland Saga",
+      "sum": "some words about this some words about this some words about this",
+      "genre": "horror, action",
+      "rating": "🔥/10",
+      "platforms": [
+        "Netflix",
+        "Mangapill"
+      ],
+      "poster": "/img/vinlandsaga/poster.jpg",
+      "lposter": "/img/vinlandsaga/lposter.jpg",
+      "images": [
+        "/img/vinlandsaga/poster.jpg",
+        "/img/vinlandsaga/lposter.jpg",
+        "/img/aot.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 3,
+      "name": "Vagabond",
+      "sum": "some words about this some words about this some words about this",
+      "genre": "horror, action",
+      "rating": "💀",
+      "platforms": [
+        "Mangapill"
+      ],
+      "poster": "/img/vagabond/poster.jpg",
+      "lposter": "/img/vagabond/lposter.jpg",
+      "images": [
+        "/img/vagabond/poster.jpg",
+        "/img/vagabond/lposter.jpg",
+        "/img/Elden.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 4,
+      "name": "Monster",
+      "sum": "some words about this some words about this some words about this",
+      "genre": "horror, action",
+      "rating": "🔥",
+      "platforms": [
+        "Netflix",
+        "Mangapill"
+      ],
+      "poster": "/img/monster/poster.jpg",
+      "lposter": "/img/monster/lposter.jpg",
+      "images": [
+        "/img/monster/poster.jpg",
+        "/img/monster/lposter.jpg",
+        "/img/aot.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 5,
+      "name": "Kagurabachi",
+      "sum": "some words about this some words about this some words about this",
+      "genre": "horror, action",
+      "rating": "💀",
+      "platforms": [
+        "Mangapill"
+      ],
+      "poster": "/img/kagurabachi/poster.jpg",
+      "lposter": "/img/kagurabachi/lposter.jpg",
+      "images": [
+        "/img/kagurabachi/poster.jpg",
+        "/img/kagurabachi/lposter.jpg",
+        "/img/Elden.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 6,
+      "name": "Jujutsu Kaisen",
+      "sum": "some words about this some words about this some words about this",
+      "genre": "horror, action",
+      "rating": "🔥",
+      "platforms": [
+        "Netflix",
+        "Mangapill"
+      ],
+      "poster": "/img/jjk/poster.jpg",
+      "lposter": "/img/jjk/lposter.jpg",
+      "images": [
+        "/img/jjk/poster.jpg",
+        "/img/jjk/lposter.jpg",
+        "/img/aot.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 7,
+      "name": "Cyberpunk: Edgerunner",
+      "sum": "some words about this some words about this some words about this",
+      "genre": "Sci-fi, action",
+      "rating": "💀",
+      "platforms": [
+        "Netflix"
+      ],
+      "poster": "/img/CER/poster.jpg",
+      "lposter": "/img/CER/lposter.jpg",
+      "images": [
+        "/img/CER/poster.jpg",
+        "/img/CER/lposter.jpg",
+        "/img/Elden.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 8,
+      "name": "name",
+      "sum": "sum",
+      "genre": "",
+      "rating": "",
+      "platforms": [],
+      "poster": "/img/name/poster.jpg",
+      "lposter": "/img/name/lposter.jpg",
+      "images": [
+        "/img/name/name_0.jpg",
+        "/img/name/name_1.jpg",
+        "/img/name/name_2.jpg"
+      ],
+      "guess": true
+    },
+    {
+      "id": 9,
+      "name": "namea",
+      "sum": "sum",
+      "genre": "",
+      "rating": "",
+      "platforms": [],
+      "poster": "/img/namea/poster.jpg",
+      "lposter": "/img/namea/lposter.jpg",
+      "images": [
+        "/img/namea/namea_0.jpg",
+        "/img/namea/namea_1.jpg"
+      ],
+      "guess": true
+    },
+    {
+      "id": 10,
+      "name": "nameaa",
+      "sum": "sum",
+      "genre": "",
+      "rating": "",
+      "platforms": [],
+      "poster": "/img/nameaa/poster.jpg",
+      "lposter": "/img/nameaa/lposter.jpg",
+      "images": [
+        "/img/nameaa/nameaa_0.jpg",
+        "/img/nameaa/nameaa_1.jpg"
+      ],
+      "guess": true
+    },
+    {
+      "id": 11,
+      "name": "nameaaasd",
+      "sum": "sum",
+      "genre": "",
+      "rating": "",
+      "platforms": [],
+      "poster": "/img/nameaaasd/poster.jpg",
+      "lposter": "/img/nameaaasd/lposter.jpg",
+      "images": [
+        "/img/nameaaasd/nameaaasd_0.jpg",
+        "/img/nameaaasd/nameaaasd_1.jpg"
+      ],
+      "guess": true
+    }
+  ]
 }
