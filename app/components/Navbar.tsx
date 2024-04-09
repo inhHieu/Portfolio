@@ -23,7 +23,7 @@ export default function Navbar() {
     ];
     const hamburgerRef = useRef<HTMLDivElement>(null);
     return (
-        <div className='   z-20
+        <div className='   z-20 max-w-[1680px] mx-auto
     flex justify-between items-center sticky top-0 left-0 w-full 
     h-14 px-6
     md:px-10 

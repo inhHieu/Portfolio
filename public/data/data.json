@@ -1,4 +1,421 @@
 {
+  "movie": [
+    {
+      "id": 0,
+      "name": "La la Land",
+      "sum": "'La La Land' is a captivating musical that transports viewers into a world of dreams and aspirations. The chemistry between Emma Stone and Ryan Gosling is electric, and the film's stunning cinematography and memorable music create a magical experience. It's a nostalgic homage to classic Hollywood that leaves you enchanted and inspired.",
+      "genre": "Romantic, Drama, Musical",
+      "rating": "8/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/aot/poster.jpg",
+      "lposter": "/img/aot/lposter.jpg",
+      "images": [
+        "/img/aot/poster.jpg",
+        "/img/aot/lposter.jpg",
+        "/img/aot/1.jpg",
+        "/img/aot/2.jpg",
+        "/img/aot/3.jpg",
+        "/img/aot/4.jpg",
+        "/img/aot/5.jpg",
+        "/img/aot/6.jpg",
+        "/img/aot/7.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 1,
+      "name": "The Pianist",
+      "sum": "'The Pianist' is a hauntingly powerful film that delves into the depths of human resilience and the atrocities of war. Adrien Brody's performance is breathtaking, capturing the raw emotions of survival and despair. The film's meticulous attention to detail, coupled with its poignant storytelling, creates an unforgettable and deeply moving cinematic experience.",
+      "genre": "Drama, Historical, War",
+      "rating": "9/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/berserk/poster.jpg",
+      "lposter": "/img/berserk/llposter.jpg",
+      "images": [
+        "/img/berserk/poster.jpg",
+        "/img/berserk/lposter.jpg",
+        "/img/berserk/poster.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 2,
+      "name": "Blade Runner 2049",
+      "sum": "'Blade Runner 2049' is a visually stunning masterpiece that captivates with its atmospheric world-building and thought-provoking narrative. Ryan Gosling delivers a compelling performance, while Harrison Ford's return adds a nostalgic touch. The film expertly explores themes of identity, humanity, and the consequences of our actions, leaving viewers mesmerized and questioning the future of our own existence.",
+      "genre": "Sci-fi, Action",
+      "rating": "9/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/vinlandsaga/poster.jpg",
+      "lposter": "/img/vinlandsaga/lposter.jpg",
+      "images": [
+        "/img/vinlandsaga/poster.jpg",
+        "/img/vinlandsaga/lposter.jpg",
+        "/img/aot.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 3,
+      "name": "Drive",
+      "sum": "'Drive' is a stylish and gripping neo-noir thriller that oozes with intensity and atmosphere. Ryan Gosling's enigmatic performance as the nameless driver is captivating, perfectly embodying the film's brooding and understated nature. The sleek cinematography, pulsating soundtrack, and bursts of shocking violence create an unforgettable cinematic experience that lingers long after the credits roll.",
+      "genre": "Noir, Action",
+      "rating": "9/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/vagabond/poster.jpg",
+      "lposter": "/img/vagabond/lposter.jpg",
+      "images": [
+        "/img/vagabond/poster.jpg",
+        "/img/vagabond/lposter.jpg",
+        "/img/Elden.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 4,
+      "name": "American Psyco",
+      "sum": "'American Psycho' is a dark and disturbing psychological thriller that explores the depths of human depravity. Christian Bale delivers a chilling and unforgettable performance as Patrick Bateman, a wealthy and charismatic investment banker with a hidden, violent obsession. The film's satirical commentary on consumerism and the masks we wear in society adds an extra layer of depth. It's a disturbing and thought-provoking examination of the dark side of human nature.",
+      "genre": "horror, action",
+      "rating": "🗿/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/monster/poster.jpg",
+      "lposter": "/img/monster/lposter.jpg",
+      "images": [
+        "/img/monster/poster.jpg",
+        "/img/monster/lposter.jpg",
+        "/img/aot.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 5,
+      "name": "No Country For Old Men",
+      "sum": "'No Country for Old Men' is a gripping and tense thriller that showcases the Coen brothers' masterful storytelling. The film follows the cat-and-mouse pursuit between a relentless hitman, portrayed brilliantly by Javier Bardem, and a morally conflicted protagonist played by Josh Brolin. With its atmospheric cinematography, intricate plot, and profound exploration of morality and fate, it stands as a modern classic in the crime genre.",
+      "genre": "Thriller, Action",
+      "rating": "8/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/kagurabachi/poster.jpg",
+      "lposter": "/img/kagurabachi/lposter.jpg",
+      "images": [
+        "/img/kagurabachi/poster.jpg",
+        "/img/kagurabachi/lposter.jpg",
+        "/img/Elden.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 6,
+      "name": "1917",
+      "sum": "'1917' is a breathtaking and immersive war film that takes viewers on an extraordinary journey. The film's innovative one-shot technique creates a sense of urgency and realism, placing the audience right in the midst of the chaos and danger. The performances are exceptional, and the emotional weight of the story is deeply felt. It's a stunning cinematic achievement that honors the sacrifices of soldiers while reminding us of the harrowing realities of war.",
+      "genre": "War, Historical",
+      "rating": "10/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/jjk/poster.jpg",
+      "lposter": "/img/jjk/lposter.jpg",
+      "images": [
+        "/img/jjk/poster.jpg",
+        "/img/jjk/lposter.jpg",
+        "/img/aot.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 7,
+      "name": "All quiet at the Western front",
+      "sum": "'All Quiet on the Western Front' is a profound and harrowing anti-war film that portrays the devastating impact of combat on young soldiers. The film's stark realism and powerful performances capture the physical and psychological toll of war. It's a poignant exploration of the futility and senselessness of violence, urging viewers to reflect on the costs of conflict. Its timeless message resonates with audiences, making it a classic in war cinema.",
+      "genre": "War, Historical",
+      "rating": "9/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/CER/poster.jpg",
+      "lposter": "/img/CER/lposter.jpg",
+      "images": [
+        "/img/CER/poster.jpg",
+        "/img/CER/lposter.jpg",
+        "/img/Elden.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 8,
+      "name": "The Last Of Us",
+      "sum": "'The Last of Us' is an extraordinary video game that combines gripping storytelling, immersive gameplay, and memorable characters. Set in a post-apocalyptic world, the game follows Joel and Ellie's journey, exploring themes of survival, loss, and the complex bonds that form amidst adversity. Its exceptional writing, stunning visuals, and emotional depth make it a groundbreaking and unforgettable gaming experience that resonates long after the credits roll.",
+      "genre": "Sci-fi, Action",
+      "rating": "8/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/test new/poster.jpg",
+      "lposter": "/img/test new/lposter.jpg",
+      "images": [
+        "/img/test new/test new_0.jpg",
+        "/img/test new/test new_1.jpg",
+        "/img/test new/test new_2.jpg",
+        "/img/test new/test new_3.jpg",
+        "/img/test new/test new_4.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 9,
+      "name": "Interstellar",
+      "sum": "'Interstellar' is a mesmerizing and thought-provoking science fiction epic directed by Christopher Nolan. The film follows a group of explorers who travel through a wormhole in search of a new habitable planet for humanity. With stunning visuals, a gripping storyline, and a standout performance by Matthew McConaughey, the movie explores themes of time, space, and the power of love. It's a cinematic journey that takes audiences on an emotional and intellectual ride, leaving them contemplating the mysteries of the universe.",
+      "genre": "Sci-fi, Drama",
+      "rating": "9/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/test new/poster.jpg",
+      "lposter": "/img/test new/lposter.jpg",
+      "images": [
+        "/img/test new/test new_0.jpg",
+        "/img/test new/test new_1.jpg",
+        "/img/test new/test new_2.jpg",
+        "/img/test new/test new_3.jpg",
+        "/img/test new/test new_4.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 10,
+      "name": "Southpaw",
+      "sum": "'Southpaw' is a gritty and intense sports drama that follows the journey of Billy 'The Great' Hope, a talented boxer played by Jake Gyllenhaal. After a personal tragedy, Billy must fight his way back into the ring to reclaim his life and career. The film showcases Gyllenhaal's transformative performance and delivers powerful boxing sequences that are both thrilling and emotionally charged. The movie explores themes of redemption, perseverance, and the human spirit, making it a compelling watch for fans of the genre.",
+      "genre": "Action, Drama",
+      "rating": "9/10",
+      "platforms": [
+        "Appletv",
+        "Mangapill",
+        "Netflix"
+      ],
+      "poster": "/img/test new/poster.jpg",
+      "lposter": "/img/test new/lposter.jpg",
+      "images": [
+        "/img/test new/test new_0.jpg",
+        "/img/test new/test new_1.jpg",
+        "/img/test new/test new_2.jpg",
+        "/img/test new/test new_3.jpg",
+        "/img/test new/test new_4.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 11,
+      "name": "Prisoners",
+      "sum": "'Prisoners' is a gripping and atmospheric thriller that delves into the darkest corners of human nature. Hugh Jackman delivers a haunting performance as a desperate father searching for his missing daughter, while Jake Gyllenhaal shines as a determined detective. The film's tense storytelling, morally complex characters, and thought-provoking exploration of justice and morality make it an engrossing and unsettling cinematic experience. It's a masterclass in suspense that keeps audiences on the edge of their seats until the very end.",
+      "genre": "random",
+      "rating": "9/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/test new/poster.jpg",
+      "lposter": "/img/test new/lposter.jpg",
+      "images": [
+        "/img/test new/test new_0.jpg",
+        "/img/test new/test new_1.jpg",
+        "/img/test new/test new_2.jpg",
+        "/img/test new/test new_3.jpg",
+        "/img/test new/test new_4.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 12,
+      "name": "The Note Book",
+      "sum": "'The Notebook' is a touching and heartfelt romantic drama that has captivated audiences with its timeless love story. Based on the novel by Nicholas Sparks, the film follows the passionate relationship between Noah (Ryan Gosling) and Allie (Rachel McAdams) as they navigate the challenges of social class, war, and memory loss. It's a beautiful portrayal of enduring love, filled with emotional moments and poignant performances. The movie has become a beloved classic, resonating with viewers and leaving a lasting impression.",
+      "genre": "Romantic, Drama",
+      "rating": "9/10",
+      "platforms": [
+        "Netflix",
+        "Appletv",
+        "Watchlonelil"
+      ],
+      "poster": "/img/test new/poster.jpg",
+      "lposter": "/img/test new/lposter.jpg",
+      "images": [
+        "/img/test new/test new_0.jpg",
+        "/img/test new/test new_1.jpg",
+        "/img/test new/test new_2.jpg",
+        "/img/test new/test new_3.jpg",
+        "/img/test new/test new_4.jpg"
+      ],
+      "guess": false
+    }
+  ],
+  "game": [
+    {
+      "id": 0,
+      "name": "Blasphemost",
+      "sum": "Attack on Titan is a brutally intense and emotionally gripping manga and anime series. It explores themes of survival, betrayal, and the despair of humanity in a dark and thought-provoking way. The series' relentless action and melancholic atmosphere make it a captivating and emotionally challenging experience.",
+      "genre": "Horror, Action, Dark Fantasy",
+      "rating": "🔥/10",
+      "platforms": [
+        "Netflix",
+        "Mangapill"
+      ],
+      "poster": "/img/aot/poster.jpg",
+      "lposter": "/img/aot/lposter.jpg",
+      "images": [
+        "/img/aot/poster.jpg",
+        "/img/aot/lposter.jpg",
+        "/img/aot/1.jpg",
+        "/img/aot/2.jpg",
+        "/img/aot/3.jpg",
+        "/img/aot/4.jpg",
+        "/img/aot/5.jpg",
+        "/img/aot/6.jpg",
+        "/img/aot/7.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 1,
+      "name": "Elden Ring",
+      "sum": "Berserk is a brutally intense and haunting manga and anime series. It explores the darkest depths of human nature, delving into violence, betrayal, and the struggle for identity. With its visceral and graphic depictions, Berserk leaves a lasting impact, pushing the boundaries of storytelling in the dark fantasy genre.",
+      "genre": "Horror, Action, Dark Fantasy",
+      "rating": "💀/10",
+      "platforms": [
+        "Netflix",
+        "Mangapill"
+      ],
+      "poster": "/img/berserk/poster.jpg",
+      "lposter": "/img/berserk/llposter.jpg",
+      "images": [
+        "/img/berserk/poster.jpg",
+        "/img/berserk/lposter.jpg",
+        "/img/berserk/poster.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 2,
+      "name": "Seriko",
+      "sum": "some words about this some words about this some words about this",
+      "genre": "horror, action",
+      "rating": "🔥/10",
+      "platforms": [
+        "Netflix",
+        "Mangapill"
+      ],
+      "poster": "/img/vinlandsaga/poster.jpg",
+      "lposter": "/img/vinlandsaga/lposter.jpg",
+      "images": [
+        "/img/vinlandsaga/poster.jpg",
+        "/img/vinlandsaga/lposter.jpg",
+        "/img/aot.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 3,
+      "name": "God of War: Ragnarok",
+      "sum": "some words about this some words about this some words about this",
+      "genre": "horror, action",
+      "rating": "💀",
+      "platforms": [
+        "Mangapill"
+      ],
+      "poster": "/img/vagabond/poster.jpg",
+      "lposter": "/img/vagabond/lposter.jpg",
+      "images": [
+        "/img/vagabond/poster.jpg",
+        "/img/vagabond/lposter.jpg",
+        "/img/Elden.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 4,
+      "name": "The Last Of Us",
+      "sum": "some words about this some words about this some words about this",
+      "genre": "horror, action",
+      "rating": "🔥",
+      "platforms": [
+        "Netflix",
+        "Mangapill"
+      ],
+      "poster": "/img/monster/poster.jpg",
+      "lposter": "/img/monster/lposter.jpg",
+      "images": [
+        "/img/monster/poster.jpg",
+        "/img/monster/lposter.jpg",
+        "/img/aot.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 5,
+      "name": "Destiny 2",
+      "sum": "'Destiny 2' is a popular online multiplayer first-person shooter developed by Bungie. Set in a science fiction universe, players assume the role of Guardians, protectors of humanity, as they battle against various alien races and undertake missions and quests. The game features a mix of cooperative and competitive gameplay, offering a wide range of activities such as story-driven campaigns, raids, strikes, and player-versus-player modes. It has a strong emphasis on loot collection, character progression, and teamwork, providing an engaging and ever-evolving experience for players.",
+      "genre": "Sci-fi, Action, Shooting",
+      "rating": "7/10",
+      "platforms": [
+        "Steam",
+        "Epic"
+      ],
+      "poster": "/img/kagurabachi/poster.jpg",
+      "lposter": "/img/kagurabachi/lposter.jpg",
+      "images": [
+        "/img/kagurabachi/poster.jpg",
+        "/img/kagurabachi/lposter.jpg",
+        "/img/Elden.jpg"
+      ],
+      "guess": false
+    },
+    {
+      "id": 6,
+      "name": "Ryse - Son Of Rome",
+      "sum": "'Ryse: Son of Rome' is an action-adventure game set in ancient Rome, developed by Crytek. Players assume the role of Marius Titus, a Roman soldier seeking revenge for the murder of his family. The game features intense combat sequences, combining swordplay, shield blocking, and executions. It also showcases stunning graphics and a cinematic presentation that immerses players in the ancient Roman world. While the game received praise for its visuals and combat mechanics, some critics felt that it lacked depth in terms of its story and gameplay variety. Overall, The game offers an enjoyable and visually impressive experience for fans of Roman history and action games.",
+      "genre": "Sci-fi, Action",
+      "rating": "8/10",
+      "platforms": [
+       "Steam"
+      ],
+      "poster": "/img/jjk/poster.jpg",
+      "lposter": "/img/jjk/lposter.jpg",
+      "images": [
+        "/img/jjk/poster.jpg",
+        "/img/jjk/lposter.jpg",
+        "/img/aot.jpg"
+      ],
+      "guess": false
+    }
+  ],
   "manga": [
     {
       "id": 0,
@@ -157,62 +574,23 @@
     },
     {
       "id": 8,
-      "name": "name",
-      "sum": "sum",
-      "genre": "",
+      "name": "test new",
+      "sum": "summarize",
+      "genre": "random",
       "rating": "",
-      "platforms": [],
-      "poster": "/img/name/poster.jpg",
-      "lposter": "/img/name/lposter.jpg",
-      "images": [
-        "/img/name/name_0.jpg",
-        "/img/name/name_1.jpg",
-        "/img/name/name_2.jpg"
+      "platforms": [
+        "Appletv",
+        "Mangapill",
+        "Netflix"
       ],
-      "guess": true
-    },
-    {
-      "id": 9,
-      "name": "namea",
-      "sum": "sum",
-      "genre": "",
-      "rating": "",
-      "platforms": [],
-      "poster": "/img/namea/poster.jpg",
-      "lposter": "/img/namea/lposter.jpg",
+      "poster": "/img/test new/poster.jpg",
+      "lposter": "/img/test new/lposter.jpg",
       "images": [
-        "/img/namea/namea_0.jpg",
-        "/img/namea/namea_1.jpg"
-      ],
-      "guess": true
-    },
-    {
-      "id": 10,
-      "name": "nameaa",
-      "sum": "sum",
-      "genre": "",
-      "rating": "",
-      "platforms": [],
-      "poster": "/img/nameaa/poster.jpg",
-      "lposter": "/img/nameaa/lposter.jpg",
-      "images": [
-        "/img/nameaa/nameaa_0.jpg",
-        "/img/nameaa/nameaa_1.jpg"
-      ],
-      "guess": true
-    },
-    {
-      "id": 11,
-      "name": "nameaaasd",
-      "sum": "sum",
-      "genre": "",
-      "rating": "",
-      "platforms": [],
-      "poster": "/img/nameaaasd/poster.jpg",
-      "lposter": "/img/nameaaasd/lposter.jpg",
-      "images": [
-        "/img/nameaaasd/nameaaasd_0.jpg",
-        "/img/nameaaasd/nameaaasd_1.jpg"
+        "/img/test new/test new_0.jpg",
+        "/img/test new/test new_1.jpg",
+        "/img/test new/test new_2.jpg",
+        "/img/test new/test new_3.jpg",
+        "/img/test new/test new_4.jpg"
       ],
       "guess": true
     }

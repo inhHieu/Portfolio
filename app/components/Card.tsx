@@ -11,7 +11,7 @@ interface ImageProps {
   image: string
 }
 
-interface Manga {
+interface Item {
   id: number;
   name: string;
   sum: string;
@@ -23,34 +23,35 @@ interface Manga {
 }
 
 interface CardProps {
-  manga: Manga;
+  item: Item;
+  category: String
 }
 
-function Card({ manga }: CardProps) {
+function Card({ category, item }: CardProps) {
 
 
 
   return (
-    <Link href={`/manga/${manga.id}`}>
-      <div className=' max-w-[350px] max-h-[180px] w-full aspect-video rounded-[10px]  bg-white/10 flex overflow-clip ' >
+    <Link href={`/${category}/${item.id}`}>
+      <div className=' w-[350px] h-[180px] aspect-video rounded-[10px]  bg-white/10 flex overflow-clip ' >
         <div className='  h-full w-[35%] relative flex-shrink-0 '>
           <Image
-            src={manga.poster}
+            src={item.poster}
             fill={true}
             objectFit='cover'
-            alt={manga.name} />
+            alt={item.name} />
         </div>
         <div className=' m-5 text-sm flex flex-col justify-between  '>
           <div className=' flex flex-col gap-1 '>
-            <p className=' text-base font-medium '>{manga.name}</p>
+            <p className=' text-base font-medium '>{item.name}</p>
             <p className=' line-clamp-2 overflow-hidden '>
-              {manga.sum} </p>
+              {item.sum} </p>
           </div>
           <div className=' flex flex-col '>
-            <p> {manga.genre} </p>
-            <p> {manga.rating} </p>
+            <p> {item.genre} </p>
+            <p> {item.rating} </p>
             <div className='platform flex gap-4 mt-1'>
-              {manga.platforms.map((platform, index) => {
+              {item.platforms.map((platform, index) => {
                 const { component, link } = (platforms as
                   { [key: string]: { component: JSX.Element; link?: string } })[platform] || {};
 

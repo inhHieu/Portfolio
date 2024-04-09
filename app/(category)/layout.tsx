@@ -9,8 +9,10 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <Navbar/>
-      {children}
+      <Navbar />
+      <div className=' max-w-[1440px] mx-auto ' >
+        {children}
+      </div>
     </>
   );
 }

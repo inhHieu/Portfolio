@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { DropzoneArea } from 'react-mui-dropzone';
+import Dropzone from 'react-dropzone'
 import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, Stack, TextField } from "@mui/material";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -8,9 +8,12 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Checkbox from '@mui/material/Checkbox';
 import Avatar from '@mui/material/Avatar';
+import DropzoneSingle from './Dropzone';
+import Dropzones from './Dropzones';
+import { platform } from 'os';
 
 export default function Popup({ open, handleClose }: { open: boolean; handleClose: () => void }) {
-    const [checked, setChecked] = useState([1]);
+    const [checked, setChecked] = useState([0]);
     const [titleFill, setTitleFill] = useState(false);
     const [imagesFill, setImagesFill] = useState(false);
     const [imgTitle, setImgTitle] = useState<File[]>([]);
@@ -19,11 +22,13 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
     const handleChange = (file: File[]) => {
         setImgTitle(file);
         setTitleFill(true);
+        console.log(file);
     };
 
     const handleImagesChange = (file: File[]) => {
         setImages(file);
         setImagesFill(true);
+        console.log(file);
     };
 
     const handleToggle = (value: number) => () => {
@@ -45,13 +50,23 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
         const name = formJson.name;
         const genre = formJson.genre;
         const sum = formJson.sum;
-        const test = 'hehe'
+        const platform = checked.map(item => {
+            if (item === 0) {
+              return 'Netflix';
+            } else if (item === 1) {
+              return 'Appletv';
+            } else if (item === 2) {
+              return 'Mangapill';
+            } else {
+              return ''; // Handle the case when item doesn't match any values
+            }
+          });
 
         const requestData = {
             name: name,
-            genre: genre,
             sum: sum,
-            test: test,
+            genre: genre,
+            platforms: platform,
             poster: `/img/${name}/poster.jpg`,
             lposter: `/img/${name}/lposter.jpg`,
             images: images.map((_, i) => `/img/${name}/${name}_${i}.jpg`),
@@ -65,6 +80,7 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
         });
 
         try {
+            console.log(requestData);
             const response = await axios.post('/api/upload', requestData);
             if (response.data.status === 200) {
                 try {
@@ -74,6 +90,7 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
                     console.error('imgError:', err);
                 }
             }
+            console.log(response.data);
         } catch (error) {
             console.error('Error:', error);
             return {
@@ -111,8 +128,8 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
                             autoFocus
                             required
                             margin="dense"
-                            id="gerne"
-                            name="gerne"
+                            id="genre"
+                            name="genre"
                             label="Genre"
                             fullWidth
                             type="text"
@@ -147,20 +164,8 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
                             })}
                         </List>
                     </Box>
-                    <Box sx={{ width: '30%' }}>
-                        <div className='dropzone-titleimg'>
-                            <DropzoneArea
-                                onChange={handleChange}
-                                acceptedFiles={['image/jpeg', 'image/png', 'image/jpg']}
-                                filesLimit={1}
-                                dropzoneText=''
-                                previewGridClasses={{
-                                    container: 'customContainerClass',
-                                    item: 'customItemClass',
-                                    image: 'customImageClass'
-                                }}
-                            />
-                        </div>
+                    <Box sx={{ width: '30%' }}> 
+                        <DropzoneSingle handleChange={handleChange} />
                     </Box>
                 </Box>
                 <TextField
@@ -174,19 +179,14 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
                     fullWidth
                     variant="standard"
                 />
-                <div className='dropzone-images'>
-                    <DropzoneArea
-                        onChange={handleImagesChange}
-                        acceptedFiles={['image/jpeg', 'image/png', 'image/jpg']}
-                        filesLimit={20}
-                        dropzoneText=' Drop images here or browse '
-                    />
+                <div className='dropzone-images pt-2 mt-4'>
+                    <Dropzones handleChange={handleImagesChange}/>
                 </div>
             </DialogContent>
             <DialogActions>
                 <Button onClick={handleClose}>Cancel</Button>
                 <Button type="submit">Subscribe</Button>
             </DialogActions>
-        </Dialog>
+        </Dialog >
     );
 }

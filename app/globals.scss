@@ -203,44 +203,9 @@ header {
 // Dropzone custom
 .dropzone-titleimg {
   border: thin #3434348f solid !important;
-  .MuiDropzoneArea-root {
-    display: grid;
-    place-items: center;
-    border: none !important;
-    overflow: visible;
-  }
-  .customContainerClass {
-    display: grid;
-    position: absolute;
-    top: 0;
-    left: 0;
-    place-items: center;
-    width: 100% !important;
-    height: 250px !important;
-    margin: 0 !important;
-  }
-  .customItemClass {
-    padding: 0 !important;
-    max-width: 100% !important;
-    .MuiDropzonePreviewList-image {
-      max-height: 250px !important;
-      height: 100% !important;
-    }
-  }
-  .customImageClass {
-    display: none !important;
-    background-color: rgba(0, 255, 26, 0.242) !important;
-    height: 250px !important;
-  }
 }
 .dropzone-images{
   border: thin #3434348f solid !important;
-  .MuiDropzoneArea-root {
-    display: grid;
-    place-items: center;
-    border: none !important;
-    overflow: visible;
-  }
 }
 
 // .category {
