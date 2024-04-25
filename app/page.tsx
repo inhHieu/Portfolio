@@ -1,15 +1,12 @@
 'use client'
-import Image from 'next/image'
 import { AnimatePresence } from "framer-motion";
 
-import SmoothScroll from './components/SmoothScroll';
-import Landing from './components/Landing';
-import Bgvideo from './components/Bgvideo';
-import ApearTex from './components/ApearText';
-import Category from './components/Category';
-import SocialMedia from './components/SocialMedia';
-import Gallery from './components/Gallery';
-import Comment from './components/Comment';
+import Landing from './components/home/Landing';
+import ApearTex from './components/home/ApearText';
+import Category from './components/category/Category';
+import SocialMedia from './components/home/SocialMedia';
+import Gallery from './components/home/Gallery';
+import Comment from './components/home/Comment';
 
 export default function Home() {
 
@@ -50,14 +47,12 @@ export default function Home() {
   return (
     <AnimatePresence>
       <Landing />
-      {/* <Bgvideo/> */}
       <ApearTex text='I might take longer to respond to your messages' />
       <ApearTex text='Instead, check out something I can do for you' />
       <Category />
       <SocialMedia />
       <Gallery />
       <Comment/>
-      
     </AnimatePresence>
   )
 }

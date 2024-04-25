@@ -3,8 +3,8 @@ import { motion as m } from 'framer-motion';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { Button } from '@mui/material';
 
-import { AddCard, Card } from '@/app/components/Card';
-import Popup from '@/app/components/PopupAdd';
+import { Card } from '@/app/components/category/Card';
+import Popup from '@/app/components/home/PopupAdd';
 
 interface Item {
   id: number;

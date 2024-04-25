@@ -8,8 +8,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Checkbox from '@mui/material/Checkbox';
 import Avatar from '@mui/material/Avatar';
-import DropzoneSingle from './Dropzone';
-import Dropzones from './Dropzones';
+import DropzoneSingle from '../category/Dropzone';
+import Dropzones from '../category/Dropzones';
 import { platform } from 'os';
 
 export default function Popup({ open, handleClose }: { open: boolean; handleClose: () => void }) {
