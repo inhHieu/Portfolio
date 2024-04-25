@@ -68,10 +68,12 @@ const PopupDetail: React.FC<MangaPopupProps> = ({ images, selectedImageIndex, on
         <FontAwesomeIcon icon={faAngleRight} />
       </button>
       <div className="wrap absolute inset-6 flex items-center justify-center">
+        {/* <img src={images[currentIndex]} alt="" className="object-contain max-h-full max-w-full" onClick={(e) => e.stopPropagation()} /> */}
         <Image
           src={images[currentIndex]} alt="image preview"
-          style={{objectFit:"contain", maxHeight:'100%', maxWidth:"100%"}}
-          fill
+          style={{objectFit:"contain", width:'auto', height:'auto', maxHeight:'100%', maxWidth:"100%"}}
+          width={0} height={0}
+          sizes="auto"
           onClick={(e) => e.stopPropagation()}
         />
       </div>
