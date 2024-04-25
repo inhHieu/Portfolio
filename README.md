@@ -1,3 +1,10 @@
+This is a project I created for a hobby and also to announce my 2 years of army service, but things happened, and I ended up completing the service earlier.
+
+This also includes a recommended list for things like movies, games, or even manga, but currently, it only contains a manga list. I will complete it later.
+
+The project doesn't actually have a backend since everything is kinna light, so it's just bunch of JSON and the local storage logic.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
