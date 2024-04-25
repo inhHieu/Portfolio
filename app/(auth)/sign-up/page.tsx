@@ -7,6 +7,7 @@ import { redirect } from "next/navigation";
 
  
 
+// TODO: make a sign-up method with password 
 
 export default function SignUp() {
   const  signup = async ()=>{
