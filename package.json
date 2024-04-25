@@ -17,6 +17,8 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.15.13",
     "@mui/material": "^5.15.13",
+    "@supabase/ssr": "^0.3.0",
+    "@supabase/supabase-js": "^2.42.6",
     "axios": "^1.6.8",
     "framer-motion": "^10.17.9",
     "multer": "^1.4.5-lts.1",
