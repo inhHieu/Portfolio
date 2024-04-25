@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useMemo, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 
@@ -70,11 +71,11 @@ export default function DropzoneSingle({ handleChange }: DropzoneSingleProps) {
         <input {...getInputProps()} accept="image/jpeg,image/png,image/jpg" />
         <p className=" absolute  h-full w-full text-center">Drop the cover image here</p>
         {file && (
-          <img
-          className=' z-10 w-full h-full object-contain '
-            src={URL.createObjectURL(file)}
-            alt="Preview"
-            onLoad={() => URL.revokeObjectURL(URL.createObjectURL(file))}
+          <Image
+              src={URL.createObjectURL(file)} alt="cover image preview"
+              style={{ zIndex:10, objectFit: 'contain' }}
+              fill
+              onLoad={() => URL.revokeObjectURL(URL.createObjectURL(file))}
           />
         )}
       </div>

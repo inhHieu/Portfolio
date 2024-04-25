@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 
@@ -31,10 +32,10 @@ export default function Dropzones({ handleChange }: DropzonesProps) {
     const thumbs = files.map(file => (
         <div key={file.name} className=' inline-flex h-48 max-w-40 '>
             <div className=' h-full flex overflow-hidden '>
-                <img
-                    className=' h-full w-full'
-                    src={file.preview}
-                    // Revoke data uri after image is loaded
+                <Image
+                    src={file.preview} alt="preview image"
+                    style={{ zIndex: 10, objectFit: 'contain', width:'100%', height:'100%'  }}
+                    width={100} height={100}
                     onLoad={() => { URL.revokeObjectURL(file.preview) }}
                 />
             </div>
@@ -49,7 +50,7 @@ export default function Dropzones({ handleChange }: DropzonesProps) {
     return (
         <section className="container">
             <div {...getRootProps({ className: 'dropzone' })}
-                className=' relative min-h-48 ' >
+                className=' relative min-h-48 cursor-pointer ' >
                 <input {...getInputProps()} />
                 <p className=" absolute  h-min w-full text-center">Drop the preview images here</p>
                 <aside className=' w-full h-full flex flex-wrap gap-4 ' >

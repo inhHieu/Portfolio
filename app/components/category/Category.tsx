@@ -19,10 +19,6 @@ function Card({ text, imageUrl, link }: CardProps) {
         h-full w-full justify-center items-center object-center  
         md:h-full md:w-1/3 md:justify-center md:items-end 
         '>
-            {/* <img className=' w-full md:h-full object-cover '
-                src={imageUrl}
-                alt={text}
-            /> */}
             <div className=' relative w-full h-full  '>
                 <Image src={imageUrl} fill={true} objectFit='cover' alt={text} />
             </div>

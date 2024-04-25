@@ -10,9 +10,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar />
-      <div className=' max-w-[1440px] mx-auto ' >
         {children}
-      </div>
     </>
   );
 }
