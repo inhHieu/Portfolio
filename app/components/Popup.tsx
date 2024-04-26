@@ -4,14 +4,9 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import { redirect } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Popup({ open, handleClose }: { open: boolean; handleClose: () => void }) {
-  const handleLogin = () => {
-    // Redirect to the sign-up page
-    redirect('/sign-up');
-  };
   return (
     <React.Fragment>
       <Dialog
@@ -29,11 +24,14 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
         <DialogActions className=' bg-white  '>
           <Button onClick={handleClose}
             className=' text-red-500 '>Cancel</Button>
-          <Button onClick={handleLogin()} autoFocus
-            className='bg-green-500 text-[#1A1A1A]'
+          <Link href={'/sign-in?%2Fmovie'}>
+            <Button autoFocus
+              className='bg-green-500 text-[#1A1A1A]'
             >
-            Login
-          </Button>
+              Login
+            </Button>
+
+          </Link>
         </DialogActions>
       </Dialog>
     </React.Fragment>
