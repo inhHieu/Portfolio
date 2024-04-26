@@ -8,7 +8,7 @@ export default function Movie() {
   const category = pathname.slice(1)
 
     return (
-        <div>
+        <div className=' max-w-[1440px] mx-auto ' >
             <List category={category} data={Data.game} />
         </div>
     )

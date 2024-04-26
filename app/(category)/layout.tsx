@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import type { Metadata } from 'next'
 
 import Navbar from '../components/Navbar';
 

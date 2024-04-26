@@ -5,7 +5,7 @@ export const platformComponents = {
   Netflix: {
     component: (
       <div className='relative w-5 h-5 '>
-        <Image src={'/img/provider/netflix.png'} alt='' fill={true} objectFit='cover' className='scale-125' />
+        <Image src={'/img/provider/netflix.png'} alt='' fill={true} style={{objectFit:"contain"}} className='scale-125' />
       </div>
     ),
     link: 'https://www.netflix.com',
@@ -13,7 +13,7 @@ export const platformComponents = {
   Appletv: {
     component: (
       <div className='appletvIcon relative w-5 h-5 rounded-[4px] filter grayscale'>
-        <Image src={'/img/provider/appletv.png'} alt='' fill={true} objectFit='contain' />
+        <Image src={'/img/provider/appletv.png'} alt='' fill={true}  style={{objectFit:"contain"}} />
       </div>
     ),
     link: 'https://tv.apple.com',
@@ -22,7 +22,7 @@ export const platformComponents = {
   Mangapill: {
     component: (
       <div className='mangapill relative w-5 h-5 rounded-[4px] '>
-        <Image src={'/img/provider/mangapill.png'} alt='' fill={true} objectFit='contain' />
+        <Image src={'/img/provider/mangapill.png'} alt='' fill={true}  style={{objectFit:"contain"}} />
       </div>
     ),
     link: 'https://www.mangapill.com',

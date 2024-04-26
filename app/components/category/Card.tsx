@@ -4,7 +4,7 @@ import { motion as m, useScroll, useTransform } from "framer-motion"
 
 import Image from 'next/image'
 import Link from 'next/link';
-import { platformComponents as platforms } from '../Platform'
+import { platformComponents as platforms } from '../home/Platform'
 
 
 interface ImageProps {

@@ -1,7 +1,8 @@
 "use client"
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive'
 import { motion as m, AnimatePresence } from "framer-motion"
+import Image from 'next/image';
 
 import Data from '@/public/data/data.json';
 import { platformComponents as platforms } from '@/app/components/home/Platform';
@@ -54,9 +55,9 @@ export default function Detail({ paramID }: DetailProps) {
             <main className="relative w-full h-full">
                 <div className="absolute w-full h-full -z-10">
                     {isPortrait &&
-                        <img src={item.poster} alt="" className="w-full h-full object-cover" />
+                        <Image src={item.poster} alt="fullscreen background" style={{ objectFit: 'cover', }} fill={true} />
                     }
-                    <img src={item.lposter} alt="" className="w-full h-full object-cover" />
+                    <Image src={item.lposter} alt="fullscreen background" style={{ objectFit: 'cover', }} fill={true} />
                 </div>
                 <m.section
                     initial={{ y: 700 }}
@@ -97,11 +98,19 @@ export default function Detail({ paramID }: DetailProps) {
                                     {item.images.map((image, index) => (
                                         <img
                                             src={image}
-                                            alt=""
+                                            alt="list thumnail"
                                             className="aspect-[2/3] object-cover cursor-pointer md:aspect-[3/2]"
                                             onClick={() => handleImageClick(image, index)}
                                             key={index}
                                         ></img>
+                                        // <Image
+                                        //     src={image} alt="list thumnail"
+                                        //     style={{ objectFit: 'cover', cursor: "pointer", aspectRatio: '2/3', }}
+                                        //     width={100} height={100}
+                                        //     sizes='(max-width: 768px) aspectRatio: 3/2,'
+                                        //     onClick={() => handleImageClick(image, index)}
+                                        // />
+
                                     ))}
                                 </div>
                             </div>

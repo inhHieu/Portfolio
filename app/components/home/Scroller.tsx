@@ -27,13 +27,12 @@ export default function Scroller({ imageUrl, direction, speed }: ScrollerProps) 
         <div className="scroller w-full " data-direction={direction} data-speed={speed}>
             <div ref={scroller__innerRef} className="scroller__inner w-full flex flex-col gap-4 relative ">
                 {imageUrl.map((url, i) => (
-                    <img key={i} src={url} alt="" /> //! use Image instead img tag
-                    // <Image 
-                    // key={i} 
-                    // src={url}
-                    // fill={true}
-                    // objectFit='cover'
-                    // alt="Picture of the author" />
+                    <Image
+                        key={i} src={url}
+                        style={{width:'100%', height:'100%' }}
+                        width={0} height={0}
+                        alt="things"
+                    />
                 ))}
             </div>
         </div>
