@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faAngle, faInstagram, faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faAngleRight, faAngleLeft, faXmark } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image';
 
 
 
@@ -67,7 +68,14 @@ const PopupDetail: React.FC<MangaPopupProps> = ({ images, selectedImageIndex, on
         <FontAwesomeIcon icon={faAngleRight} />
       </button>
       <div className="wrap absolute inset-6 flex items-center justify-center">
-        <img src={images[currentIndex]} alt="" className="object-contain max-h-full max-w-full" onClick={(e) => e.stopPropagation()} />
+        {/* <img src={images[currentIndex]} alt="" className="object-contain max-h-full max-w-full" onClick={(e) => e.stopPropagation()} /> */}
+        <Image
+          src={images[currentIndex]} alt="image preview"
+          style={{objectFit:"contain", width:'auto', height:'auto', maxHeight:'100%', maxWidth:"100%"}}
+          width={0} height={0}
+          sizes="auto"
+          onClick={(e) => e.stopPropagation()}
+        />
       </div>
       <button className="close-button absolute top-0 right-0  aspect-square px-4 py-3 " onClick={handlePopupClose}>
       <FontAwesomeIcon icon={faXmark} />

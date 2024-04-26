@@ -4,7 +4,7 @@ import { motion as m, useScroll, useTransform } from "framer-motion"
 
 import Image from 'next/image'
 import Link from 'next/link';
-import { platformComponents as platforms } from '../components/Platform'
+import { platformComponents as platforms } from '../Platform'
 
 
 interface ImageProps {
@@ -38,7 +38,7 @@ function Card({ category, item }: CardProps) {
           <Image
             src={item.poster}
             fill={true}
-            objectFit='cover'
+            style={{ objectFit: 'cover' }}
             alt={item.name} />
         </div>
         <div className=' m-5 text-sm flex flex-col justify-between  '>
@@ -74,9 +74,9 @@ function Card({ category, item }: CardProps) {
 
 function AddCard() {
   return (
-    <m.div 
-    className=' max-w-[350px] max-h-[180px] w-full aspect-video rounded-[10px]  bg-white/10 flex overflow-clip ' >
-    <div className='h-full w-[35%] relative flex-shrink-0 bg-gray-300'>
+    <m.div
+      className=' max-w-[350px] max-h-[180px] w-full aspect-video rounded-[10px]  bg-white/10 flex overflow-clip ' >
+      <div className='h-full w-[35%] relative flex-shrink-0 bg-gray-300'>
 
       </div>
       <div className='m-5 text-sm flex flex-col justify-between'>

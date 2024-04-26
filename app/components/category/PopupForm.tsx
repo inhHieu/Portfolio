@@ -12,7 +12,7 @@ import DropzoneSingle from './Dropzone';
 import Dropzones from './Dropzones';
 import { platform } from 'os';
 
-export default function Popup({ open, handleClose }: { open: boolean; handleClose: () => void }) {
+export default function FormPopup({ open, handleClose }: { open: boolean; handleClose: () => void }) {
     const [checked, setChecked] = useState([0]);
     const [titleFill, setTitleFill] = useState(false);
     const [imagesFill, setImagesFill] = useState(false);
