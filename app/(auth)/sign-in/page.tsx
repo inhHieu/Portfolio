@@ -1,9 +1,9 @@
 
-// import { signup } from '../../action/auth'
 
 import { createClient } from "@/utils/supabase/server";
 import { headers } from "next/headers";
 import Image from "next/image";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
 
@@ -29,6 +29,7 @@ export default function SignIn() {
       return redirect(data.url)
     }
     // 3. redirect back
+    
   }
 
   return (
@@ -64,7 +65,7 @@ export default function SignIn() {
               </div>
             </div>
           </form>
-          <p className="mt-8"> Dont have an account? <span className="cursor-pointer text-sm text-blue-600"> Join free today</span></p>
+          <p className="mt-8"> Dont have an account? <Link href={'/sign-up'} className="cursor-pointer text-sm text-blue-600"> Join free today</Link></p>
         </div>
       </div>
     </div >

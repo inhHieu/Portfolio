@@ -1,10 +1,12 @@
-import { useState } from 'react';
+'use client'
+import React, { useEffect, useState } from 'react';
 import { motion as m } from 'framer-motion';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { Button } from '@mui/material';
 
-import { AddCard, Card } from '@/app/components/Card';
-import Popup from '@/app/components/PopupAdd';
+import { Card } from '@/app/components/category/Card';
+import FormPopup from '@/app/components/category/PopupForm';
+import Popup from '../Popup';
 
 interface Item {
   id: number;
@@ -22,9 +24,12 @@ interface Item {
 interface ListProps {
   category: string;
   data: Item[];
+  isLoggedIn: boolean
 }
 
-export default function List({ category, data }: ListProps) {
+export default function List({ isLoggedIn, category, data }: ListProps) {
+
+  // animation configuation
   const itemVariants = {
     initial: {
       opacity: 0,
@@ -47,14 +52,21 @@ export default function List({ category, data }: ListProps) {
     },
   };
 
+  // pop-up
   const [open, setOpen] = useState(false);
+  const [noti, setNoti] = useState(false)
 
   const handleClickOpen = () => {
+    if(!isLoggedIn) 
+      return setNoti(true)
     setOpen(true);
   };
 
-  const handleClose = () => {
+  const handleCloseForm = () => {
     setOpen(false);
+  };
+  const handleClose = () => {
+    setNoti(false);
   };
 
   return (
@@ -86,7 +98,8 @@ export default function List({ category, data }: ListProps) {
         </Button>
       </m.div>
 
-      {open && <Popup open={open} handleClose={handleClose} />}
+      {open && isLoggedIn && <FormPopup open={open} handleClose={handleCloseForm} />}
+      {noti && <Popup open={noti} handleClose={handleClose} />}
     </main>
   );
 }

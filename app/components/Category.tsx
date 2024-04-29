@@ -20,7 +20,7 @@ function Card({ text, imageUrl, link }: CardProps) {
         md:h-full md:w-1/3 md:justify-center md:items-end 
         '>
             <div className=' relative w-full h-full  '>
-                <Image src={imageUrl} fill={true} objectFit='cover' alt={text} />
+                <Image src={imageUrl} fill={true} style={{objectFit:'cover'}} alt={text} />
             </div>
             <div className='mask absolute h-full w-full 
             bg-black/40 md:bg-transparent
