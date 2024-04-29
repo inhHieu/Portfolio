@@ -18,7 +18,7 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
         <DialogContent className='bg-white '>
           <DialogContentText id="alert-dialog-description"
             className='text-[#1A1A1A]  '>
-            Let's people know who post this
+            Let&apos;s people know who post this
           </DialogContentText>
         </DialogContent>
         <DialogActions className=' bg-white  '>
