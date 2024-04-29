@@ -30,7 +30,7 @@ export default function Scroller({ imageUrl, direction, speed }: ScrollerProps) 
                     <Image
                         key={i} src={url}
                         style={{width:'100%', height:'100%' }}
-                        width={0} height={0}
+                        width={1980} height={1080}
                         alt="things"
                     />
                 ))}
