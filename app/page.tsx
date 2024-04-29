@@ -2,14 +2,12 @@
 import Image from 'next/image'
 import { AnimatePresence } from "framer-motion";
 
-import SmoothScroll from './components/SmoothScroll';
-import Landing from './components/Landing';
-import Bgvideo from './components/Bgvideo';
-import ApearTex from './components/ApearText';
-import Category from './components/Category';
-import SocialMedia from './components/SocialMedia';
-import Gallery from './components/Gallery';
-import Comment from './components/Comment';
+import Landing from './components/home/Landing';
+import ApearTex from './components/home/ApearText';
+import Category from './components/home/Category';
+import SocialMedia from './components/home/SocialMedia';
+import Gallery from './components/home/Gallery';
+import Comment from './components/home/Comment';
 
 export default function Home() {
 
