@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { motion, useScroll, useTransform } from "framer-motion"
 
-import VerticalText from '../home/VerticalText'
+import VerticalText from './VerticalText'
 
 interface CardProps {
     text: string;

@@ -7,7 +7,7 @@ import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faHome, faHamburger, faHouse } from "@fortawesome/free-solid-svg-icons";
 
-import SideBar from "./home/SideBar";
+import SideBar from "./SideBar";
 
 export default function Navbar() {
     const pathname = usePathname();

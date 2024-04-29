@@ -5,8 +5,8 @@ import { motion as m, AnimatePresence } from "framer-motion"
 import Image from 'next/image';
 
 import Data from '@/public/data/data.json';
-import { platformComponents as platforms } from '@/app/components/home/Platform';
-import PopupDetail from '@/app/components/home/PopupDetail'; import Link from 'next/link';
+import { platformComponents as platforms } from '@/app/components/Platform';
+import PopupDetail from '@/app/components/PopupDetail'; import Link from 'next/link';
 import { usePathname } from "next/navigation";
 
 
