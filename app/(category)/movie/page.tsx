@@ -8,8 +8,6 @@ export default async function Movie() {
   const { data: { user } } = await supabase.auth.getUser();
 
   return (
-    <div className=' max-w-[1440px] mx-auto ' >
-      <List isLoggedIn={user ? true : false} category={'movie'} data={Data.movie} />
-    </div>
+    <List isLoggedIn={user ? true : false} category={'movie'} data={Data.movie} />
   )
 }

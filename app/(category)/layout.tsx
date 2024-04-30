@@ -9,13 +9,15 @@ interface LayoutProps {
 }
 
 export default async function Layout({ children }: LayoutProps) {
-const supabase = createClient();
+  const supabase = createClient();
 
   const { data: { user } } = await supabase.auth.getUser();
   return (
     <>
       <Navbar user={user} />
-      {children}
+      <div className=' max-w-[1440px] mx-auto ' >
+        {children}
+      </div>
     </>
   );
 }
