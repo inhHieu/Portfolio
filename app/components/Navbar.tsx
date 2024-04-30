@@ -5,11 +5,12 @@ import { usePathname } from "next/navigation";
 import { useRef } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faHome, faHamburger, faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faHamburger, faHouse } from "@fortawesome/free-solid-svg-icons";
 
 import SideBar from "./home/SideBar";
+import Image from "next/image";
 
-export default function Navbar() {
+export default function Navbar({ user }: any) {
     const pathname = usePathname();
     const finalSlashIndex = pathname.lastIndexOf('/')
     const previousPathname = pathname.slice(0, finalSlashIndex)
@@ -50,6 +51,17 @@ export default function Navbar() {
                             <FontAwesomeIcon icon={faHouse} />
                         </div>
                     </Link>
+                    {user &&
+                        <Link href={'/profile'}>
+                            <div className='flex items-center gap-2 ml-2 cursor-pointer'>
+                                <Image src={user?.user_metadata.avatar_url} alt=''
+                                    style={{ borderRadius: '100%' }}
+                                    width={30} height={30}
+                                />
+                                <div>{user?.user_metadata.user_name}</div>
+                            </div>
+                        </Link>
+                    }
                 </div>
                 <ul className=' w-max  gap-28 hidden md:flex '>
                     {links.slice(1).map(({ name, to, id }) => (

@@ -6,7 +6,13 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import Link from 'next/link';
 
+import { usePathname } from 'next/navigation'
+
+
 export default function Popup({ open, handleClose }: { open: boolean; handleClose: () => void }) {
+  // const pathname = usePathname()
+  // console.log(pathname)
+
   return (
     <React.Fragment>
       <Dialog
@@ -24,7 +30,7 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
         <DialogActions className=' bg-white  '>
           <Button onClick={handleClose}
             className=' text-red-500 '>Cancel</Button>
-          <Link href={'/sign-in?%2Fmovie'}>
+          <Link href={'/sign-in?from=%2Fmovie'}>
             <Button autoFocus
               className='bg-green-500 text-[#1A1A1A]'
             >

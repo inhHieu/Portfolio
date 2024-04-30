@@ -6,7 +6,8 @@ import Image from 'next/image';
 
 import Data from '@/public/data/data.json';
 import { platformComponents as platforms } from '@/app/components/home/Platform';
-import PopupDetail from '@/app/components/category/PopupImage'; import Link from 'next/link';
+import PopupDetail from '@/app/components/category/PopupImage';
+import Link from 'next/link';
 import { usePathname } from "next/navigation";
 
 
