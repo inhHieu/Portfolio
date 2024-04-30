@@ -51,7 +51,7 @@ export default function Navbar({ user }: any) {
                             <FontAwesomeIcon icon={faHouse} />
                         </div>
                     </Link>
-                    {user &&
+                    {user && pathname != '/profile' &&
                         <Link href={'/profile'}>
                             <div className='flex items-center gap-2 ml-2 cursor-pointer'>
                                 <Image src={user?.user_metadata.avatar_url} alt=''

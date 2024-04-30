@@ -22,13 +22,11 @@ export default function FormPopup({ open, handleClose }: { open: boolean; handle
     const handleChange = (file: File[]) => {
         setImgTitle(file);
         setTitleFill(true);
-        console.log(file);
     };
 
     const handleImagesChange = (file: File[]) => {
         setImages(file);
         setImagesFill(true);
-        console.log(file);
     };
 
     const handleToggle = (value: number) => () => {
@@ -80,17 +78,14 @@ export default function FormPopup({ open, handleClose }: { open: boolean; handle
         });
 
         try {
-            console.log(requestData);
             const response = await axios.post('/api/upload', requestData);
             if (response.data.status === 200) {
                 try {
                     const imgResponse = await axios.post('/api/uploadImg', formDataImg);
-                    console.log(imgResponse.data);
                 } catch (err) {
                     console.error('imgError:', err);
                 }
             }
-            console.log(response.data);
         } catch (error) {
             console.error('Error:', error);
             return {

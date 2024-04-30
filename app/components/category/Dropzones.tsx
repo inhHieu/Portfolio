@@ -25,7 +25,6 @@ export default function Dropzones({ handleChange }: DropzonesProps) {
             });
             handleChange(acceptedFiles);
             setFiles(updatedFiles);
-            console.log(acceptedFiles)
         }
     });
 

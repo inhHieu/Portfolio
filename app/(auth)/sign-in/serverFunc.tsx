@@ -28,7 +28,6 @@ const ServerFunc = (props: Props) => {
         if (error) {
             console.log(error)
         } else {
-            console.log(data, 'from:', searchParams.from,'origin',origin)
             return redirect(data.url)
         }
         // 3. redirect back

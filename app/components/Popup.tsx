@@ -6,12 +6,9 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import Link from 'next/link';
 
-import { usePathname } from 'next/navigation'
 
 
 export default function Popup({ open, handleClose }: { open: boolean; handleClose: () => void }) {
-  // const pathname = usePathname()
-  // console.log(pathname)
 
   return (
     <React.Fragment>

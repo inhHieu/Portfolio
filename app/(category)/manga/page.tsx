@@ -7,7 +7,6 @@ export default async function Manga() {
   const supabase = createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
-  console.log('user', user)
 
   return (
     <div className=' max-w-[1440px] mx-auto ' >

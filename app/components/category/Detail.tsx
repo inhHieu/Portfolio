@@ -24,7 +24,6 @@ export default function Detail({ paramID }: DetailProps) {
     const pathname = usePathname();
     const finalSlashIndex = pathname.lastIndexOf('/')
     const previousPathname = pathname.slice(0, finalSlashIndex)
-    console.log(previousPathname.slice(1))
 
     const ID = parseInt(paramID);
 
