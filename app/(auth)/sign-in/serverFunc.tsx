@@ -15,8 +15,8 @@ const ServerFunc = (props: Props) => {
         'use server';
         // 1. create supabase client
         const supabase = createClient();
-        const origin = headers().get('origin');
-
+        const origin = 'https://portfolio-eight-nu-51.vercel.app';
+      
         // 2. sign in with provider
         const { error, data } = await supabase.auth.signInWithOAuth({
             provider: 'github',
@@ -28,11 +28,13 @@ const ServerFunc = (props: Props) => {
         if (error) {
             console.log(error)
         } else {
+            // console.log(data.url,host,origin,nextUrl)
             return redirect(data.url)
         }
         // 3. redirect back
 
     }
+    // console.log(origin)
 
     return (
         <div className="h-screen py-4 box-border">
