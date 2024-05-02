@@ -12,8 +12,8 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <>
+        <div className=' max-w-[1440px]'>
             {children}
-        </>
+        </div>
     )
 }
