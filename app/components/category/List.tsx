@@ -17,8 +17,6 @@ interface Item {
   platforms: string[];
   poster: string;
   lposter: string;
-  images: string[];
-  guess: boolean;
 }
 
 interface ListProps {

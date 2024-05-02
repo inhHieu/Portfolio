@@ -15,7 +15,7 @@ export default async function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar user={user} />
-      <div className=' max-w-[1440px] mx-auto ' >
+      <div className=' mx-auto ' >
         {children}
       </div>
     </>

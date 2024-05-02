@@ -9,6 +9,7 @@ import { platformComponents as platforms } from '@/app/components/home/Platform'
 import PopupDetail from '@/app/components/category/PopupImage';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
+import path from 'path';
 
 
 interface DetailProps {
@@ -26,6 +27,7 @@ export default function Detail({ paramID }: DetailProps) {
     const previousPathname = pathname.slice(0, finalSlashIndex)
 
     const ID = parseInt(paramID);
+
 
     const category = 'movie'
     const item = Data[category]?.find((m) => m.id === ID);

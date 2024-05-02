@@ -19,7 +19,7 @@ interface Item {
   rating: string;
   platforms: string[];
   poster: string;
-  images: string[];
+  
 }
 
 interface CardProps {
