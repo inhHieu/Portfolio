@@ -1,43 +1,38 @@
+'use client'
 
-
-import { createClient } from "@/utils/supabase/server";
+import { createClient } from "@/utils/supabase/client";
 import { headers } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 
 
 
 export default function SignIn() {
-  const signin = async () => {
-    'use server';
-    // 1. create supabase client
-    const supabase = createClient();
-    const origin = headers().get('orgin');
 
-    // 2. sign in with provider
-    const { error, data } = await supabase.auth.signInWithOAuth({
-      provider: 'github',
-      options: {
-        redirectTo: `${origin}/auth/callback`
-      }
-    })
-    if (error) {
-      console.log(error)
-    } else {
-      return redirect(data.url)
-    }
-    // 3. redirect back
-    
-  }
+  const params = useSearchParams();
+
+    const next = params.get("next") || "";
+    const handleLoginWithOAuth = ( ) => {
+      const supabase = createClient();
+      supabase.auth.signInWithOAuth({
+        provider: 'github',
+        options: {
+          redirectTo: location.origin + "/auth/callback?next=" + next,
+        },
+      });
+    };
+
+
 
   return (
     <div className="h-screen py-4 box-border">
       <div className="bg-white h-full w-1/3 mx-auto flex justify-center items-center box-border">
         <div>
 
-          <form action={signin}>
+          <form action={handleLoginWithOAuth}>
             <div>
               <span className="text-sm text-gray-900">Welcome back</span>
               <h1 className="text-2xl font-bold">Login to your account</h1>
@@ -60,7 +55,7 @@ export default function SignIn() {
             <div className="">
               <button disabled className=" cursor-not-allowed mt-4 mb-3 w-full bg-green-500 hover:bg-green-400 text-white py-2 rounded-md transition duration-100">Login now</button>
               <div className="cursor-pointer flex space-x-2 justify-center items-center bg-gray-700 hover:bg-gray-600 text-white py-2 rounded-md transition duration-100">
-                <Image src={'/img/provider/github.png'} alt="github icon" width={20} height={20} style={{borderRadius:"100%"}}/>
+                <Image src={'/img/provider/github.png'} alt="github icon" width={20} height={20} style={{ borderRadius: "100%" }} />
                 <button type="submit" >Or sign-in with GitHub</button>
               </div>
             </div>

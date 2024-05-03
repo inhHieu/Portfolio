@@ -6,6 +6,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import Link from 'next/link';
 
+
 export default function Popup({ open, handleClose }: { open: boolean; handleClose: () => void }) {
   return (
     <React.Fragment>
