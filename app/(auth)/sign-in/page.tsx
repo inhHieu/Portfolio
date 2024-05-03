@@ -15,15 +15,14 @@ export default function SignIn() {
     const next = params.get("next") || "";
     const handleLoginWithOAuth = ( ) => {
       const supabase = createClient();
-      // supabase.auth.signInWithOAuth({
-      //   provider: 'github',
-      //   options: {
-      //     // redirectTo: location.origin + "/confirm/callback?next=" + next,
-      //   },
-      // });
+      supabase.auth.signInWithOAuth({
+        provider: 'github',
+        options: {
+				redirectTo: location.origin + "/auth/callback?next=" + next,
+        },
+      });
       console.log(location.origin)
     };
-
 
 
   return (
