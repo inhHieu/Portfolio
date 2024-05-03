@@ -1,10 +1,8 @@
 'use client'
 
 import { createClient } from "@/utils/supabase/client";
-import { headers } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import { useSearchParams } from "next/navigation";
 
 
@@ -20,7 +18,7 @@ export default function SignIn() {
       supabase.auth.signInWithOAuth({
         provider: 'github',
         options: {
-          redirectTo: location.origin + "/auth/callback?next=" + next,
+          redirectTo: location.origin + "/confirm/callback?next=" + next,
         },
       });
     };

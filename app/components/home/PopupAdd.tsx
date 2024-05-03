@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import axios from 'axios';
-import Dropzone from 'react-dropzone'
 import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, Stack, TextField } from "@mui/material";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -10,7 +9,6 @@ import Checkbox from '@mui/material/Checkbox';
 import Avatar from '@mui/material/Avatar';
 import DropzoneSingle from '../category/Dropzone';
 import Dropzones from '../category/Dropzones';
-import { platform } from 'os';
 
 export default function Popup({ open, handleClose }: { open: boolean; handleClose: () => void }) {
     const [checked, setChecked] = useState([0]);
