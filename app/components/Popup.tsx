@@ -28,7 +28,7 @@ export default function Popup({ open, handleClose }: { open: boolean; handleClos
         <DialogActions className=' bg-white  '>
           <Button onClick={handleClose}
             className=' text-red-500 '>Cancel</Button>
-          <Link href={'/sign-in?next='+pathname}>
+          <Link href={'/auth/sign-in?next='+pathname}>
             <Button autoFocus
               className='bg-green-500 text-[#1A1A1A]'
             >
